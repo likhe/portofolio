@@ -1,5 +1,11 @@
 # portofolio
 
+
+*Architecture du site web
+Page d'accueil -> Mon CV/présentation sur même page que le lien sur le CV à télécharger) ->Compétences/Expériences professionnelles/Formation
+----Idem-----> Mes projets ->vers le projet proposé
+----Idem-----> Contact 
+* Cahier des charges
 - créer un slider sans js et jq
 - créer un slider avec js et sans jq
 - créer un slider avec jq
