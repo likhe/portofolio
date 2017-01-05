@@ -13,7 +13,7 @@ $(document).ready(function() {
     $currentImg.css('display', 'inline-block'); // post only the current img
     //4. manage the page change from an image to the next img
     //4.1manipulate the html - add the prev and next direction
-    $slide.append('<div class="controls"> <span class="prev">Precedent</span> <span class="next">Suivant</span> </div>');
+    $slide.append('<div class="controls"> <span class="prev">&#65513;</span> <span class="next">&#xffeb;</span> </div>');
     //4.2 call the class span next
     // next img
     $('.next').click(function() {
