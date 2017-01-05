@@ -1,15 +1,12 @@
-#carrousel{
+#slide{
     position:relative;
-    height:70vh;
-    width:70vw;
+    height:700px;
+    width:700px;
     margin:auto;
 }
-#carrousel ul li{
+#slide ul li{
     position:absolute;
-    top:0;
-    left:0;
     list-style: none;
-    width: 70vw;
 }
 img {
   max-width: 100%;
