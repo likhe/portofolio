@@ -28,8 +28,60 @@ li {
 /*----Give a responsive background--------------------*/
 	background: url("https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/1554888/1161/773/m1/fpnw/wm0/4-pack_model2-01-.png?1471188092&s=a89f992c539d32ed5b5224194ee0b446") no-repeat center center;
 	background-size: cover;
+	position:relative;
 }
+/*affect the logo class*/
 .logo {
 	font-size: 4em;
-	color: #fff;
+	color: blue;
+	line-height: 1.1;
+	border: 1px solid #ff;
+	background-color: hsla(152, 40%, 20%, 1.00);
+	border-radius: 100%; 
+	width: 80px;
+	height: 80px;
+	padding: 5px;
+	margin: 50px 0 0 50px;
+	display: inline-block;
+	cursor: pointer;
+
+}
+.nav-icon {
+	width: 50px;
+	height: 40px;
+	background-color: transparent;
+	position: absolute;
+	top: 70px;
+	right: 50px;
+	cursor: pointer;
+/* user-select property controls how the text in an element is allowed to be selected*/
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+
+}
+.nav-icon .icon {
+	width: 50px;
+	height: 2px;
+	background-color: #333;
+	position: absolute;
+	top: 20px;
+}
+/*the property	::before selector is used to inserts something before the content of each selected elements */
+.nav-icon .icon:before,
+.nav-icon .icon:after  {
+/*The content property is used with the :before and :after pseudo-elements, to insert generated content.*/
+	content:'';
+	width: 50px;
+	height: 2px;
+	background-color: #fff;
+	position: absolute;
+}
+.nav-icon .icon:before {
+	top: -10px;
+}
+.nav-icon .icon:after  {
+	top: 10px;
 }
