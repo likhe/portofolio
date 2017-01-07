@@ -22,6 +22,7 @@ a {
 li {
 	list-style: none;
 }
+/*the header of the page*/
 .header {
 	width: 100vw;
 	height: 100vh;
@@ -46,6 +47,7 @@ li {
 	cursor: pointer;
 
 }
+/*navigation icon*/
 .nav-icon {
 	width: 50px;
 	height: 40px;
@@ -65,7 +67,7 @@ li {
 .nav-icon .icon {
 	width: 50px;
 	height: 2px;
-	background-color: #333;
+	background-color: #fff;
 	position: absolute;
 	top: 20px;
 }
@@ -84,4 +86,51 @@ li {
 }
 .nav-icon .icon:after  {
 	top: 10px;
+}
+/*navigation*/
+.nav {
+	width: 300px;
+	height: auto;
+	margin: 0 auto;
+	opacity: 1;
+	visibility: visible;
+	text-align: center;
+/*---------transform: move the nav class--------------*/
+	transform: translateY(40%);
+}
+/*------style of my menu content-------*/
+.nav .nav_ul {
+	width: 100%;
+	padding: 20px;
+	background-color: hsla(200, 21%, 14%, .7);
+}
+.nav .nav_ul li {
+	width: 100%;
+	margin-bottom: 20px;
+	background-color: hsla(210, 12%, 10%, 1.00);
+}
+.nav .nav_ul li:last-child {
+	margin-bottom: 0;
+}
+.nav .nav_ul a{
+	padding: 10px 0;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	font-weight: 800;
+	transition: all .3s ease-in-out;
+}
+.nav .nav_ul a:hover {
+	color: white;
+}
+
+/*--------------main content-----------------*/
+.content {
+	padding: 50px;
+	color: silver;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.3em;
+}
+.content h1 {
+	margin-bottom: 30px;
 }
