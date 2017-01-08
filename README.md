@@ -16,8 +16,6 @@ Page d'accueil -> Mon CV/présentation sur même page que le lien sur le CV à télé
 - rendre responsive les pages web
 - envoyer un lien sur chaque partie du slider
 - chercher une manière de concevoir un avatar -> placer l'avatar en haut à droite 
-- créer le menu - créer la full page avec opacity
-- créer le menu hamb
 - créer un formulaire de contact
 - créer une timeline pour expériences pro et formation
 - envisager un site web au moins bilingue
