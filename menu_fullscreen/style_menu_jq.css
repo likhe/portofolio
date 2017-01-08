@@ -12,6 +12,7 @@ html {
 body {
 	margin:0;
 	padding:0;
+	
 }
 /*------------------Text affected------------------------*/
 a {
@@ -175,4 +176,26 @@ li {
 	visibility: visible;
 /*optionnal effect*/
 	transform: translateY(20%);
+}
+/*deal with the scrolling issue*/
+.nav-opened .header {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+.nav-opened .content {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	opacity: 0;
+	visibility: hidden;
 }
