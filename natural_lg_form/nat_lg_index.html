@@ -17,15 +17,17 @@
 		<label class="step_two">
 			<p>Le sujet de la demande</p>
 		</label>
-			<input type="text" name="subject" class="placeholder-on" id="name" placeholder="Sujet de la demande" autocomplete="off"><br/>
+			<input type="text" name="subject" class="placeholder-on" id="name" placeholder="Sujet de la demande"><br/>
 		<label class="step_three"><p>J'aimerai vous solliciter sur</p></label>
-			<textarea name="message" id="message" cols="30" rows="6" placeholder="Leave a message" class="placeholder-on"></textarea>
+			<textarea name="message" id="message" class="placeholder-on" placeholder="Voici mon message"></textarea>
 		<label class="step_four">
 			<p>Veuillez me contacter sur</p>
 		</label>
-			<input type="email" name="email" class="placeholder-on" id="email" placeholder="ton courriel" autocomplete="off">
-		<br/>
-		<input type="submit" id="submit" value="Envoi par pigeon voyageur virtuel">
+			<input type="email" name="email" class="placeholder-on" id="email" placeholder="ton courriel" /><br>
+		<div class="final_step">
+			<button type="submit" id="submit" class="send">Je t'envoie</button>
+			<button type="url" id="home" class="return">J'abondonne</button>
+		</div>
 	</form>
 </fieldset>
 </div>
