@@ -7,14 +7,17 @@ body {
 background-size: cover;
   }
 .container {
-  heigth: 100vh;
-}
-fieldset {
-  border: 5px solid navy;
+  height: 100vh;
+  width: 100vw;
+  border: 5px solid #E18728;
 }
 .contact-form {
-  color: navy;
-  font-weight: bolder;
-  font-size: 1.6em;
-  text-align: center;
-}
+	border: 5px solid navy;
+	float: left;
+ }
+ .step_one .step_two .step_three .step_four {
+	color: navy;
+	font-weight: bolder;
+	font-size: 1.6em;
+	text-align: center;
+ }
