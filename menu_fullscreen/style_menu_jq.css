@@ -153,3 +153,10 @@ li {
 .content h1 {
 	margin-bottom: 30px;
 }
+/*jQuery class ----when the nav is open, do something...*/
+/*...in logo ----*/
+.nav-opened .logo {
+	transform: scale(1);
+}
+/*...in nav ul class ----*/
+.nav-opened .nav_ul {}
