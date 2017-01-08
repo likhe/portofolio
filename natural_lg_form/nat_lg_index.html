@@ -3,36 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Titre de la page</title>
   <link rel="stylesheet" href="nat_style.css">
 </head>
 <body>
-<div class= "content_contact">
-	<div class="title_contact">Contactez-moi</div>
-	<div class="form_box">
-		<form action="form.php" method="get">
-			<label class="step_one"> 
-			<p>Bonjour, mon nom est</p>
-			</label>
-				<input type="text" name="name" class="placeholder-on" id="name" placeholder="ton nom et prenom" autocomplete="off">
-			<br/>
-			<label class="step_two">
-			<p>Le sujet de la demande</p>
-			</label>
-				<input type="text" name="subject" class="placeholder-on" id="subject" placeholder="Sujet de la demande"><br/>
-			<label class="step_three"><p>J'aimerais vous solliciter sur</p></label>
-				<textarea name="message" id="message" class="placeholder-on" placeholder="Voici mon message"></textarea>
-			<label class="step_four">
-			<p>Veuillez me contacter sur</p>
-			</label>
-				<input type="email" name="email" class="placeholder-on" id="email" placeholder="ton courriel" />
+	<form action="form.php" method="get">
+		<h2>Contact</h2>
+		<input type="text" name="name" placeholder=""></input>
+		<input type="text" name="email" placeholder=""></input>
+		<input type="text" name="subject" placeholder=""></input>
+		<textarea name="comment"></textarea>
+		<input type="submit" value="Envoyer" id="send">
+		<a href="#" class="home">
+			<button type="button" value="#home" id="home" class="home">Retour vers la page d'accueil</button>
+		</a>
 		</form>
-		<div class="buttons">
-			<button type="submit" id="submit" class="send">Je t'envoie</button>
-			<button type="url" id="home" class="return">J'abondonne</button>
-		</div>
-	</div>
-</div>
 </body>
 </html>
