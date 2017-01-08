@@ -1,0 +1,201 @@
+/*reset page*/
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	padding:0;
+	margin:0;
+}
+body {
+	margin:0;
+	padding:0;
+	
+}
+/*------------------Text affected------------------------*/
+a {
+	color: hsla(37, 39%, 72%, 1.00);
+	text-decoration: none;
+}
+/*--------------------reset the list---------------------------*/
+li {
+	list-style: none;
+}
+/*the header of the page*/
+.header {
+	width: 100vw;
+	height: 100vh;
+/*-----------Give a responsive background--------------------*/
+	background: url("https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/1554888/1161/773/m1/fpnw/wm0/4-pack_model2-01-.png?1471188092&s=a89f992c539d32ed5b5224194ee0b446") no-repeat center center;
+	background-size: cover;
+	position:relative;
+}
+/*affect the logo class*/
+.logo {
+	font-size: 4em;
+	color: pink;
+	line-height: 1.1;
+	border: 1px solid #fff;
+	background-color: #fff;
+	border-radius: 100%; 
+	width: 80px;
+	height: 80px;
+	padding: 5px;
+	margin: 50px 0 0 50px;
+	position: absolute;
+	cursor: pointer;
+/*optionnal - just to put in front of*/
+	z-index: 1;
+	/*---------transform: move the nav class--------------*/
+	transform: scale(.9);
+	/*--transition effect for the logo to the transform scale in nav opened class in JQ---*/
+	transition: all .5s ease;
+}
+/*navigation icon*/
+.nav-icon {
+	width: 50px;
+	height: 40px;
+	/*optionnal - just to put in front of*/
+	z-index: 1;
+	background-color: transparent;
+	position: absolute;
+	top: 70px;
+	right: 50px;
+	cursor: pointer;
+/* user-select property controls how the text in an element is allowed to be selected*/
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+
+}
+.nav-icon .icon {
+	width: 50px;
+	height: 2px;
+	background-color: #000;
+	position: absolute;
+	top: 20px;
+}
+/*the property	::before selector is used to inserts something before the content of each selected elements */
+.nav-icon .icon:before,
+.nav-icon .icon:after  {
+/*The content property is used with the :before and :after pseudo-elements, to insert generated content.*/
+	content:'';
+	width: 50px;
+	height: 2px;
+	background-color: #000;
+	position: absolute;
+}
+.nav-icon .icon:before {
+	top: -10px;
+}
+.nav-icon .icon:after  {
+	top: 10px;
+}
+/*nav-overlay -----the one who cover all the main page*/
+.nav-overlay {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.7);
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+/*optionnal*/
+	transition: all .5s ease;
+}
+/*navigation*/
+.nav {
+	width: 300px;
+	height: auto;
+	margin: 0 auto;
+	opacity: 0;
+	visibility: hidden;
+	text-align: center;
+/*---------transform: move the nav class--------------*/
+	transform: translateY(50%);
+/*transition to the nav opened in Jq */
+	transition: all .5s ease;
+}
+/*------style of my menu content-------*/
+.nav .nav_ul {
+	width: 100%;
+	padding: 20px;
+	background-color: hsla(200, 21%, 14%, .7);
+}
+.nav .nav_ul li {
+	width: 100%;
+	margin-bottom: 20px;
+	background-color: hsla(210, 12%, 10%, 1.00);
+}
+.nav .nav_ul li:last-child {
+	margin-bottom: 0;
+}
+.nav .nav_ul a{
+	padding: 10px 0;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	font-weight: 800;
+	transition: all .3s ease-in-out;
+}
+.nav .nav_ul a:hover {
+	color: white;
+}
+
+/*--------------main content-----------------*/
+.content {
+	padding: 50px;
+	color: silver;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.3em;
+}
+.content h1 {
+	margin-bottom: 30px;
+}
+/*jQuery class ----when the nav is open, do something...*/
+/*...in logo ----*/
+.nav-opened .logo {
+	transform: scale(1);
+}
+/*...in nav overlay ----*/
+.nav-opened .nav-overlay {
+	opacity: 1;
+	visibility: visible;
+}
+/*...in nav ul class - show the menu ---*/
+.nav-opened .nav {
+	opacity: 1;
+	visibility: visible;
+/*optionnal effect*/
+	transform: translateY(20%);
+}
+/*deal with the scrolling issue*/
+.nav-opened .header {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+.nav-opened .content {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	opacity: 0;
+	visibility: hidden;
+}
