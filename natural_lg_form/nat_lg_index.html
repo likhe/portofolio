@@ -7,36 +7,27 @@
 </head>
 <body>
 <div class= "container">
-<form id="nl-form" class="nl-form">
-	I feel like eating 
-	<select>
-		<option value="1" selected>any food</option>
-		<option value="2">Indian</option>
-		<option value="3">French</option>
-		<option value="4">Japanese</option>
-		<option value="2">Italian</option>
-	</select>
-	<br />in a
-	<select>
-		<option value="1" selected>standard</option>
-		<option value="2">fancy</option>
-		<option value="3">hip</option>
-		<option value="4">traditional</option>
-		<option value="2">fine</option>
-	</select>
-	restaurant
-	<select>
-		<option value="1" selected>anytime</option>
-	 	<option value="1">at 7 p.m.</option>
-	 	<option value="2">at 8 p.m.</option>
-	 	<option value="3">at 9 p.m.</option>
-	</select>
-	in <input type="text" value="" placeholder="any city"/>
-	<div class="nl-submit-wrap">
-		<button class="nl-submit" type="submit">Find a restaurant</button>
-	</div>
-	<div class="nl-overlay"></div>
-</form>
+	<fieldset>
+	<form id="contact-form" class="contact-form">
+		<label class="step_one"> 
+			<p>Bonjour, mon nom est</p>
+		</label>
+			<input type="text" name="name" class="placeholder-on" id="name" placeholder="ton nom et prenom" autocomplete="off">
+		<br/>
+		<label class="step_two">
+			<p>Le sujet de la demande</p>
+		</label>
+			<input type="text" name="subject" class="placeholder-on" id="name" placeholder="Sujet de la demande" autocomplete="off"><br/>
+		<label class="step_three"><p>J'aimerai vous solliciter sur</p></label>
+			<textarea name="message" id="message" cols="30" rows="6" placeholder="Leave a message" class="placeholder-on"></textarea>
+		<label class="step_four">
+			<p>Veuillez me contacter sur</p>
+		</label>
+			<input type="email" name="email" class="placeholder-on" id="email" placeholder="ton courriel" autocomplete="off">
+		<br/>
+		<input type="submit" id="submit" value="Envoi par pigeon voyageur virtuel">
+	</form>
+</fieldset>
 </div>
 </body>
 </html>
