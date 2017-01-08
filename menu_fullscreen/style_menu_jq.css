@@ -49,6 +49,8 @@ li {
 	z-index: 1;
 	/*---------transform: move the nav class--------------*/
 	transform: scale(.9);
+	/*--transition effect for the logo to the transform scale in nav opened class in JQ---*/
+	transition: all .5s ease;
 }
 /*navigation icon*/
 .nav-icon {
@@ -72,7 +74,7 @@ li {
 .nav-icon .icon {
 	width: 50px;
 	height: 2px;
-	background-color: #fff;
+	background-color: #000;
 	position: absolute;
 	top: 20px;
 }
@@ -83,7 +85,7 @@ li {
 	content:'';
 	width: 50px;
 	height: 2px;
-	background-color: #fff;
+	background-color: #000;
 	position: absolute;
 }
 .nav-icon .icon:before {
@@ -103,19 +105,23 @@ li {
 	bottom: 0;
 	background-color: rgba(0,0,0,.7);
 	cursor: pointer;
-	opacity: 1;
-	visibility: visible;
+	opacity: 0;
+	visibility: hidden;
+/*optionnal*/
+	transition: all .5s ease;
 }
 /*navigation*/
 .nav {
 	width: 300px;
 	height: auto;
 	margin: 0 auto;
-	opacity: 1;
-	visibility: visible;
+	opacity: 0;
+	visibility: hidden;
 	text-align: center;
 /*---------transform: move the nav class--------------*/
-	transform: translateY(40%);
+	transform: translateY(50%);
+/*transition to the nav opened in Jq */
+	transition: all .5s ease;
 }
 /*------style of my menu content-------*/
 .nav .nav_ul {
@@ -158,5 +164,15 @@ li {
 .nav-opened .logo {
 	transform: scale(1);
 }
-/*...in nav ul class ----*/
-.nav-opened .nav_ul {}
+/*...in nav overlay ----*/
+.nav-opened .nav-overlay {
+	opacity: 1;
+	visibility: visible;
+}
+/*...in nav ul class - show the menu ---*/
+.nav-opened .nav {
+	opacity: 1;
+	visibility: visible;
+/*optionnal effect*/
+	transform: translateY(20%);
+}
