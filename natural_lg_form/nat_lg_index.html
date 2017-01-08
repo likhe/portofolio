@@ -2,13 +2,16 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Titre de la page</title>
   <link rel="stylesheet" href="nat_style.css">
 </head>
 <body>
-<div class= "container">
-	<div class="form-box">
-		<form action="form.php" method="get" id="contact-form" class="contact-form">
+<div class= "content_contact">
+	<div class="title_contact">Contactez-moi</div>
+	<div class="form_box">
+		<form action="form.php" method="get">
 			<label class="step_one"> 
 			<p>Bonjour, mon nom est</p>
 			</label>
@@ -24,9 +27,11 @@
 			<p>Veuillez me contacter sur</p>
 			</label>
 				<input type="email" name="email" class="placeholder-on" id="email" placeholder="ton courriel" />
+		</form>
+		<div class="buttons">
 			<button type="submit" id="submit" class="send">Je t'envoie</button>
 			<button type="url" id="home" class="return">J'abondonne</button>
-		</form>
+		</div>
 	</div>
 </div>
 </body>
