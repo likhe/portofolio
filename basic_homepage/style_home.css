@@ -1,0 +1,10 @@
+/**********reset page************/
+body {
+	margin: 0; 
+}
+.container {
+	display: flex;
+}
+#header_container {}
+#main_container {}
+#footer_container {}
