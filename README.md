@@ -9,6 +9,7 @@ Page d'accueil -> Mon CV/présentation sur même page que le lien sur le CV à télé
 -éléborer un lien entre chaque page
 - créer un slider sans js et jq
 - créer un slider avec js et sans jq
+- privilégier l'effet parallaxe sur le slider -> uniquement avec CSS
 - tenter de mettre un bouton pour le rendre maléable
 - uniquement sur la welcome page faire apparaitre avec un hover une indication pour guider le client -> voir possibilité avec l'apparition d'un texte à la place de l'avatar
 - voir comment rendre le slider plus responsive en version mobile
@@ -23,3 +24,6 @@ Page d'accueil -> Mon CV/présentation sur même page que le lien sur le CV à télé
 - créer une animation pour remplacer un titre par une icone en hover
 - styliser sa page -> chercher une palette de couleur -> chercher un motif qui va servir de cadre à la page ->chercher un font
 - animamer un background->utiliser un masque?
+- prevoir à la fin un easter egg avec un jeu style pong ou space invader sur la page d'accueilet une offre gratuite de conception de sites web
+-developper la partie à propos de moi
+-utiliser la librairir chart.js pour les graphiques
