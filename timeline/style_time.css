@@ -1,88 +1,105 @@
 /*https://webdesign.tutsplus.com/tutorials/building-a-vertical-timeline-with-css-and-a-touch-of-javascript--cms-26528*/
+
+
 /*********reset the element**************************/
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font: normal 16px/1.5 "Helvetica Neue", sans-serif;
-  background: #456990;
-  color: #fff;
-  overflow-x: hidden;
-  padding-bottom: 50px;
-}  
+    font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+    background: #456990;
+    color: #fff;
+    overflow-x: hidden;
+}
 
 
-/* INTRO SECTION
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* INTRO SECTION */
 
 .container {
-  max-width: 100vw;
-  margin: 0 auto;
-  text-align: center;
+    max-width: 100vw;
+    margin: 0 auto;
 }
+
 
 /****************basic style the vertical line*********************/
-.timeline li {
-/******default position************/
-	position: relative;
-	width: 6px;/******je veux que çà reste une taille fixe**********/
-	margin: 0 auto;
-	padding-top: 50px;/**je veux que çà reste une taille fixe**********/
-	background: yellow;
-/*********default style*****************/
-	list-style-type: none;
-}
-.timeline li::after { /*********** CSS selector ::after targets the last virtual child of the selected element - used to add content to an element with the css property content=''. Is inline by default****************************/
-	content: '';
-	position:absolute;
-	left: 50%;
-	bottom: 0;
-	width: 30px;
-	height: 30px;
-	/********improve the style if unsatisfied*************/
-	background: inherit;
-	border-radius: 50%;
-	/********more synthetic with tranform property than several margin******************/
-	transform: translateX(-50%);
 
+.timeline li {
+    /******default position************/
+    position: relative;
+    width: 6px;
+    /******je veux que ï¿½ï¿½ reste une taille fixe**********/
+    margin: 0 auto;
+    padding-top: 50px;
+    /**je veux que ï¿½ï¿½ reste une taille fixe**********/
+    background: yellow;
+    /*********default style*****************/
+    list-style-type: none;
 }
+
+.timeline li::after {
+    /*********** CSS selector ::after targets the last virtual child of the selected element - used to add content to an element with the css property content=''. Is inline by default****************************/
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+    /********improve the style if unsatisfied*************/
+    background: inherit;
+    border-radius: 50%;
+    /********more synthetic with tranform property than several margin******************/
+    transform: translateX(-50%);
+}
+
+
 /**style of the elements inside the list*********************************/
+
 .timeline .period {
-	background-color: green;
-	position: relative;
-	bottom: 0;
-	width: 40vw;
-	padding: 15px;
+    background-color: green;
+    position: relative;
+    bottom: 0;
+    width: 400px;
+    padding: 15px;
 }
+
 .timeline .period ::before {
-	content:'';
-	position: absolute;
-	bottom: 7px;
-	width:0;
-	height:0;
-	border: 3px solid pink;
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    width: 0;
+    height: 0;
+    border: 3px solid pink;
 }
+
+
 /********place each element according their odd position**********************/
+
 .timeline li:nth-child(odd) .period {
-	left: 45px;
+    left: 45px;
 }
+
 .timeline li:nth-child(odd) .period::before {
-	left: -15px;
-	border-width: 8px 16px 8px 0;
-	border-color: black;
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: black;
 }
+
 
 /********place each element according their even position**********************/
+
 .timeline li:nth-child(even) .period {
-	  left: -439px;
+    left: -439px;
 }
-.timeline li:nth-child(even) .period::before  {
-	right: -15px;
-	border-width: 8px 0 8px 16px;
-	border-color: black;
+
+.timeline li:nth-child(even) .period::before {
+    right: -15px;
+    border-width: 8px 0 8px 16px;
+    border-color: black;
 }
+
+
+/********************interaction option - can be improved******************************************/
