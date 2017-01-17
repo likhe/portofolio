@@ -49,7 +49,7 @@ body {
     width: 30px;
     height: 30px;
     /********improve the style if unsatisfied*************/
-    background: inherit;
+    background: red;
     border-radius: 50%;
     /********more synthetic with tranform property than several margin******************/
     transform: translateX(-50%);
