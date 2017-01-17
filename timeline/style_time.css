@@ -28,7 +28,7 @@ body {
 /****************basic style the vertical line*********************/
 
 .timeline li {
-    /******default position************/
+    /******defaolt position************/
     position: relative;
     width: 6px;
     /******je veux que �� reste une taille fixe**********/
@@ -102,4 +102,42 @@ body {
 }
 
 
-/********************interaction option - can be improved******************************************/
+/********************interaction option manage the hiding and revealing - can be improved******************************************/
+/**********target the circles on the line********************/
+.timeline ol li::after {
+  background: white;
+  transition: background .5s ease-in-out;
+}
+
+.timeline ol li.in-view::after {
+  background: orange;
+}
+/******make the div period disappear**************************/
+.timeline ol li .period {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+/********animation transform dans les coté impairs*************************/
+.timeline ol li:nth-child(odd) .period {
+  transform: translate3d(200px,0,0);
+}
+/********animation transform dans les cotés pairs****************************/
+.timeline ol li:nth-child(even) .period {
+  transform: translate3d(-200px,0,0);
+}
+/**************make appear the div*******/
+.timeline ol li.in-view .period {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+/***********media responsive*******************/
+@media screen and (max-width: 900px) {
+  .timeline ol li div {
+    width: 250px;
+  }
+  .timeline ol li:nth-child(even) div {
+    left: -289px; /*250+45-6*/
+  }
+}
