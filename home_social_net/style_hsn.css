@@ -12,71 +12,87 @@
   font-style: normal;
 }
 
-* {
-    margin: 0;
-    background: yellow;
-}
-* a {
-  text-decoration: none;
-  color: white;
-}
-/******************the social network content**********************/
-#content {
-    text-align: center;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 200px;
-    height: 40px;
-    background-color: red;
+body {
+    color: #FFF;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
 }
 
 .social {
-
-    background-color: purple;
-
+    width: 48px;
+    height: 48px;
+    margin: 0 auto;
 }
-
-
-/*************social network******************/
-
-ul {
-    position: relative;
-    left: 0;
-    right: 0;
-    margin: auto;
-    height: 46px;
-    width: 180px;
-    padding: 0;
-    list-style: none;
+.social p {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  text-align: center;
 }
-
+ul{
+  padding:0;
+  list-style: none;
+  color: #fff;
+}
 ul li {
-    font-size: 1.5em;
-    cursor: pointer;
-    width: 60px;
-    margin: 0;
-    padding: 12px 0;
-    float: left;
-    display: inline-block;
-    height: 22px;
+    text-align: center;
+    display: inline;
+    height: 100px;
+}
+ul a {
+    color: #fff;
+    text-decoration: none;
 }
 
-ul li a:hover {
-    color: blue;
+
+/***********-----------------icons transitions--------------------******************/
+/****************twitter************************/
+.socicon-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
 }
-
-/*-------the social network font applied---------*/
-
-*.socicon- {
-  font-family: "socicon" !important;
+.socicon-twitter:hover {
+    background-color: #00aced;
 }
-
-/******wrapper for the list which i put inside icons**********/
-
-.twitter,.github,.viadeo,.linkedin {
-  display: inline-block;
-  padding: 12px 0 12px 0;
-  margin-right: -6px;
+/***********github*************************/
+.socicon-github {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.socicon-github:hover {
+    background-color: #eb8231;
+}
+/*************viadeo*************************/
+.socicon-viadeo {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.socicon-viadeo:hover {
+    background-color: #e64a41;
+}
+.socicon-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.socicon-linkedin:hover {
+    background-color: #0073a4;
 }
