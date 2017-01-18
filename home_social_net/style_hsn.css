@@ -1,98 +1,116 @@
-/*http://codepen.io/labnol/pen/CenhB?editors=1100*/
-
 /*----------for the icon fonts-----------------------*/
+
 @font-face {
-  font-family: "socicon";
-  src:url("fonts/socicon.eot");
-  src:url("fonts/socicon.eot?#iefix") format("embedded-opentype"),
-    url("fonts/socicon.woff") format("woff"),
-    url("fonts/socicon.ttf") format("truetype"),
-    url("fonts/socicon.svg#socicon") format("svg");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "socicon";
+    src: url("fonts/socicon.eot");
+    src: url("fonts/socicon.eot?#iefix") format("embedded-opentype"), url("fonts/socicon.woff") format("woff"), url("fonts/socicon.ttf") format("truetype"), url("fonts/socicon.svg#socicon") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
     color: #FFF;
     -webkit-font-smoothing: antialiased;
     text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
-.social {
+#social {
     width: 48px;
     height: 48px;
     margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 }
-.social p {
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  text-align: center;
-}
-ul{
-  padding:0;
-  list-style: none;
-  color: #fff;
-}
-ul li {
+
+#social ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
     text-align: center;
-    display: inline;
-    height: 100px;
 }
+
+#social ul li {
+    display: inline;
+}
+
+#social p {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-align: center;
+}
+
 ul a {
     color: #fff;
     text-decoration: none;
 }
 
-
 /***********-----------------icons transitions--------------------******************/
+
+
 /****************twitter************************/
+
 .socicon-twitter {
-    padding:10px 12px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
     transition: .5s;
     background-color: #322f30;
 }
+
 .socicon-twitter:hover {
     background-color: #00aced;
 }
+
+
 /***********github*************************/
+
 .socicon-github {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
     transition: .5s;
     background-color: #322f30;
 }
+
 .socicon-github:hover {
     background-color: #eb8231;
 }
+
+
 /*************viadeo*************************/
+
 .socicon-viadeo {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
     transition: .5s;
     background-color: #322f30;
 }
+
 .socicon-viadeo:hover {
     background-color: #e64a41;
 }
+
 .socicon-linkedin {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
+    padding: 10px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
     transition: .5s;
     background-color: #322f30;
 }
+
 .socicon-linkedin:hover {
     background-color: #0073a4;
 }
