@@ -45,14 +45,9 @@ body {
 	
 }
 /*************the content of the header****************************/
-.lg, .menu, .logo {
+.logo, .lg, .menu {
 	width:calc(100%/3);
 	height: 10vh;
-}
-/***********languages flag size*******************/
-
-.header-right img {
-    max-width: 2%;
 }
 /***************logo*************************/
 .logo {
@@ -66,7 +61,7 @@ body {
 	width: 10vw;
 	height: 10vh;
 }
-/*********************nav*************************/
+/********************navigation bar*************************/
 .menu {
 	position: absolute;
 	text-align: center;
@@ -74,52 +69,29 @@ body {
 	top:0;
 	left:calc(100vh/3);
 }
-.home, .contact, .works, .resume {
-	padding: .5em;
-	margin: .5em;
+.home, 
+.works, 
+.resume,
+.contact{
+	line-height: 10vh;
+	padding: .3em;
+	margin: .3em;
 }
+/***********languages flag size*******************/
 
-/*************end of the header********the content********************/
+.header-right img {
+    max-width: 2%;
+}
+/*********************the content********************/
 
 .content {
     text-align: center;
     width: 100vw;
     height: 70vh;
 }
-/*********avatar*********************/
-
-.avatar {
-		margin-top: 1vh;
-    display: inline-block;
-    text-align: center;
-}
-
-.frame {
-	margin: 0 auto;
-	display: inline-block;
-	background-color: red;
-	border-radius: 50%;
-	width: 100px;
-	height: 100px;
-}
-
-.avatar_face {
-		margin-top: 13px;
-    display: inline-block;
-    min-width: 64px;
-    min-height: 64px;
-}
 
 
-/********************title*************************/
 
-/********************projects name********************/
-.projects a {
-  text-align: center;
-  text-decoration: none;
-  font-size: 2em;
-  color: black;
-}
 
 /*************foooter********************/
 
