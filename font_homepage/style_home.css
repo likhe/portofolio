@@ -1,0 +1,189 @@
+/************reset********************/
+
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+	overflow: hidden;
+	background-image: radial-gradient(center center, circle cover, #ffeda3, #ffc800);
+	background-image: -webkit-radial-gradient(center center, circle cover, #ffeda3, #ffc800);
+	background-image: -moz-radial-gradient(center center, circle cover, #ffeda3, #ffc800);
+	background-image: -o-radial-gradient(center center, circle cover, #ffeda3, #ffc800);
+	background-image: -ms-radial-gradient(center center, circle cover, #ffeda3, #ffc800);
+}
+
+* a {
+    text-decoration: none;
+	color: white;
+}
+
+* ul {
+    list-style-type: none;
+    color: white;
+}
+
+/********************background radial gradient**********************************/
+.wrapper {
+	background-image:url('img/french_world.png');
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+    background-position: center center; 
+}
+
+/***********************************header and footer*****************************/
+
+
+#header, #footer {
+    width: 100vw;
+    height: 10vh;
+    margin: 0 auto;
+}
+/***********************************header*****************************/
+#header {
+    width: 100vw;
+    background-color: blue;
+	
+}
+
+/***********languages flag size*******************/
+
+.header-right img {
+    max-width: 2%;
+}
+
+
+/*************end of the header********the content********************/
+
+.content {
+    text-align: center;
+    width: 100vw;
+    height: 70vh;
+}
+/*********avatar*********************/
+
+.avatar {
+		margin-top: 1vh;
+    display: inline-block;
+    text-align: center;
+}
+
+.frame {
+	margin: 0 auto;
+	display: inline-block;
+	background-color: red;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+}
+
+.avatar_face {
+		margin-top: 13px;
+    display: inline-block;
+    min-width: 64px;
+    min-height: 64px;
+}
+
+
+/********************title*************************/
+
+/********************projects name********************/
+.projects a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 2em;
+  color: black;
+}
+
+/*************foooter********************/
+
+#footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: .1em;
+  background-color: gray;
+  text-align: center;
+}
+/*************credits and social network****************************/
+.credits .share {
+  margin-bottom:.5em;
+}
+
+
+/***************credits content**********************/
+
+.credits {
+    float: left;
+    padding: 30px;
+    margin: auto;
+}
+
+.credits span {
+	margin-right: 15px;
+}
+/***********social network******************/
+
+.share {
+	float: right;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+/********content of social network***********/
+
+.share [class*="socicon-"] {
+    float: right;
+}
+
+
+/**************icons***************************/
+
+[class*="socicon-"] {
+    vertical-align: top;
+    display: inline;
+    border-radius: 50%;
+    padding: 10px 14px;
+	margin-right: 4px;
+    transition: .5s;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+}
+
+[class*="socicon-"] a:hover {
+    background-color: #e25714;
+}
+
+.socicon-twitter {
+    background-color: #322f30;
+}
+
+.socicon-twitter:hover {
+    background-color: #00aced;
+}
+
+.socicon-github {
+    background-color: #322f30;
+}
+
+.socicon-github:hover {
+    background-color: #eb8231;
+}
+
+.socicon-viadeo {
+    background-color: #322f30;
+}
+
+.socicon-viadeo:hover {
+    background-color: #e64a41;
+}
+
+.socicon-linkedin {
+    background-color: #322f30;
+}
+
+.socicon-linkedin:hover {
+    background-color: #0073a4;
+}
