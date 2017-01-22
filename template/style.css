@@ -22,13 +22,8 @@ body {
     color: white;
 }
 
-/********************background radial gradient**********************************/
-.wrapper {
-	background-image:url('img/french_world.png');
-	background-repeat:no-repeat;
-	background-attachment: fixed;
-    background-position: center center; 
-}
+/********************wrapper of the page**********************************/
+.wrapper {}
 
 /***********************************header and footer*****************************/
 
@@ -54,7 +49,7 @@ body {
 	position: absolute;
 	top:0;
 	left:0;
-	width:calc(100%/3);
+	width: 20vw;
 	height: 10vh;
 }
 .logo img {
@@ -67,7 +62,8 @@ body {
 	text-align: center;
 	background-color: purple;
 	top:0;
-	left:calc(100vh/3);
+	left: 20vw;
+	width:60vw;
 }
 .home, 
 .works, 
@@ -78,9 +74,33 @@ body {
 	margin: .3em;
 }
 /***********languages flag size*******************/
+#lg  {
+	position: absolute;
+	top:0;
+	right:0;
+	width:20vw;
+	height: 10vh;
+}
 
-.header-right img {
-    max-width: 2%;
+#lg ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+#lg ul li { 
+	display: inline; 
+}
+
+#lg ul li a {
+	text-decoration: none;
+	padding: .3em;
+}
+
+#lg img {
+    width: 24px;
+	height: 24px;
 }
 /*********************the content********************/
 
@@ -97,16 +117,13 @@ body {
 
 #footer {
   position: absolute;
-  right: 0;
   bottom: 0;
-  left: 0;
-  padding: .1em;
   background-color: gray;
   text-align: center;
 }
 /*************credits and social network****************************/
-.credits .share {
-  margin-bottom:.5em;
+.credits, .share {
+  margin: 0 auto;
 }
 
 
