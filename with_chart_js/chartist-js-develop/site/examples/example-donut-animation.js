@@ -1,18 +1,6 @@
-  // Initialize a Line chart in the container with the ID chart1
-  new Chartist.Line('#chart1', {
-    labels: [1, 2, 3, 4],
-    series: [[100, 120, 180, 200]]
-  });
-
-  // Initialize a Line chart in the container with the ID chart2
-  new Chartist.Bar('#chart2', {
-    labels: [1, 2, 3, 4],
-    series: [[5, 2, 8, 3]]
-  });
-  
-  var chart = new Chartist.Pie('#chart3', {
-  series: [80, 20],
-  labels: [1, 2]
+var chart = new Chartist.Pie('.ct-chart', {
+  series: [10, 20, 50, 20, 5, 50, 15],
+  labels: [1, 2, 3, 4, 5, 6, 7]
 }, {
   donut: true,
   showLabel: false
@@ -52,14 +40,16 @@ chart.on('draw', function(data) {
     });
 
     // We can't use guided mode as the animations need to rely on setting begin manually
+    // See http://gionkunz.github.io/chartist-js/api-documentation.html#chartistsvg-function-animate
     data.element.animate(animationDefinition, false);
   }
 });
 
-// For the sake of the example we update the chart every time it's created
+// For the sake of the example we update the chart every time it's created with a delay of 8 seconds
 chart.on('created', function() {
   if(window.__anim21278907124) {
     clearTimeout(window.__anim21278907124);
     window.__anim21278907124 = null;
   }
+  window.__anim21278907124 = setTimeout(chart.update.bind(chart), 10000);
 });
