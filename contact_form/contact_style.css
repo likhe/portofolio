@@ -190,6 +190,7 @@ input:focus, textarea:focus {
 		padding-left: 3%;
 		padding-right: 3%;
 	}
+<<<<<<< HEAD
 }
 /********************social network*********/
 body {
@@ -293,4 +294,6 @@ ul a {
 }
 a:hover {
     background-color: #e25714;
+=======
+>>>>>>> 4f0ab0a302b6a8862dc5dee6ccb0c6675ee58bbb
 }
