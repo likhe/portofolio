@@ -94,7 +94,6 @@ body {
 }
 h1 {
 	  font-family: 'Kawoszeh';
-	  text-transform: uppercase;
 	  font-size: 5em;
 	  letter-spacing: .2em;
       margin: 0 auto;
@@ -226,7 +225,6 @@ h1 {
 .projects {
   background: none;
   border: 0;
-  box-sizing: border-box;
   margin: 1em;
   padding: 1em 2em;
   text-align: center;
@@ -272,16 +270,21 @@ h1 {
 }
 
 /********************projects name********************/
+@font-face {
+	font-family: 'Azedo-Light';
+	src: url('fonts/Azedo-Light.otf');
+}
 .projects a {
   text-decoration: none;
   
 }
 .works{
+	font-family: 'Azedo-Light';
 	text-align: center;
 	font-size: 2em;
 	letter-spacing: .1em;
 	color: black;
-	text-transform: capitalize;
+	text-transform: uppercase;
 
 
 }
