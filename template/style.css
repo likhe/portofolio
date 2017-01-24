@@ -37,7 +37,7 @@ body {
 #header {
     width: 100vw;
     background-color: blue;
-	
+
 }
 /*************the content of the header****************************/
 .logo, .lg, .menu {
@@ -58,22 +58,22 @@ body {
 }
 /********************navigation bar*************************/
 .menu {
-	position: absolute;
+  display: inline-block;
 	text-align: center;
 	background-color: purple;
 	top:0;
 	left: 20vw;
 	width:60vw;
 }
-.home, 
-.works, 
+.home,
+.works,
 .resume,
 .contact{
 	line-height: 10vh;
 	padding: .3em;
 	margin: .3em;
 }
-/***********languages flag size*******************/
+/***********languages*******************/
 #lg  {
 	position: absolute;
 	top:0;
@@ -83,24 +83,19 @@ body {
 }
 
 #lg ul {
-	margin: 0;
+  vertical-align: middle;
 	padding: 0;
 	list-style-type: none;
 	text-align: center;
 }
 
-#lg ul li { 
-	display: inline; 
+#lg ul li {
+	display: inline;
 }
 
 #lg ul li a {
 	text-decoration: none;
 	padding: .3em;
-}
-
-#lg img {
-    width: 24px;
-	height: 24px;
 }
 /*********************the content********************/
 
@@ -202,4 +197,10 @@ body {
 
 .socicon-linkedin:hover {
     background-color: #0073a4;
+}
+/**********************media query******************************************/
+@@media query {
+  .menu {
+    display: none;
+  }
 }
