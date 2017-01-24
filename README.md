@@ -13,6 +13,7 @@ Page d'accueil -> Mon CV/présentation sur même page que le lien sur le CV à télé
 - rendre responsive les pages web
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 -envisager un logo
 - créer une timeline pour expériences pro et formation avec code couleur
 - envisager un site web au moins bilingue
@@ -27,6 +28,8 @@ Page d'accueil -> Mon CV/présentation sur même page que le lien sur le CV à télé
 - chercher une manière de concevoir un avatar -> placer l'avatar en haut à droite 
 =======
 >>>>>>> a1cbfe34fc7b2623ed2d5ae85bc17a86cd2b96f3
+=======
+>>>>>>> 507d6b08087a60bbd513463f9e4566c7bb35b5db
 -envisager un logo
 - créer une timeline pour expériences pro et formation avec code couleur
 - envisager un site web au moins bilingue
@@ -37,8 +40,12 @@ Page d'accueil -> Mon CV/présentation sur même page que le lien sur le CV à télé
 - page de chargement entre deux pages
 - prevoir à la fin un easter egg avec un jeu style pong ou space invader sur la page d'accueilet une offre gratuite de conception de sites web
 <<<<<<< HEAD
+<<<<<<< HEAD
 -developper la partie à propos de moi
 >>>>>>> 4f0ab0a302b6a8862dc5dee6ccb0c6675ee58bbb
 =======
 -developper la partie à propos de moi sur la partie CV
 >>>>>>> a1cbfe34fc7b2623ed2d5ae85bc17a86cd2b96f3
+=======
+-developper la partie à propos de moi sur la partie CV
+>>>>>>> 507d6b08087a60bbd513463f9e4566c7bb35b5db
