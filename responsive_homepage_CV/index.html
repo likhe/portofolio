@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Page</title>
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="row">
+            <!--the menu-->
+            <div class="col">
+				<div class="button_container" id="toggle">
+  <span class="top"></span>
+  <span class="middle"></span>
+  <span class="bottom"></span>
+</div>
+
+<div class="overlay" id="overlay">
+  <nav class="overlay-menu">
+    <ul>
+      <li ><a href="#">Accueil</a></li>
+      <li><a href="#">Curriculum Vitae</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+			</div>
+			<!--the logo-->
+            <div class="col">
+			 <div class="logo-frame">
+                    <img class="logo" src="img/logo.png" />
+                </div>
+			</div>
+			<!--the language-------->
+            <div class="col">
+                <div id="lg">
+                    <ul>
+                        <li class="fr">
+                            <a href="#">FR</a>
+                        </li>
+                        <li class="en">
+                            <a href="#">EN</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="wrapper">
+           <!--avatar and luggage---->
+            <section class="row">
+                <div class="col"></div>
+				<div class="col">
+					<img src="avatar_icons/body/Annoying.png" />
+				</div>
+				<div class="col">
+					<div class="row">
+						<div class="col"></div>
+						<div class="col"></div>	
+						<div class="col">
+							<img src="avatar_icons/obj/xs-luggage.png" />
+						</div>
+					</div>
+				</div>
+				<div class="col"></div>
+            </section>
+            <!--parts---->
+            <section class="row">
+                <div class="col">
+					<p class="option">Parcours</p>
+				</div>
+                <div class="col">
+					<p class="option">Compétences</p>
+				</div>
+				<div class="col">
+					<p class="option">Centres d'intérêts</p>
+				</div>
+				<div class="row">
+					<div class="col"></div>
+				</div>
+			</section>
+        </main>
+        <footer class="row">
+            <div class="col">
+                <!------credits nav---------->
+                <div class="credits-wrapper wrapper">
+                    <nav class="credits row">
+                        <span class="col"><small>&copy;</small>2017</span>
+                        <span class="col"><a href="#">Mentions</a></span>
+                        <span class="col"><a href="#">Contact</a></span>
+                    </nav>
+                </div>
+            </div>
+            <!---social icons--------------------->
+            <div class="col">
+                <div class="wrapper">
+                    <div class="share row">
+                        <div class="col">
+                            <a href="#">
+                                <i class="socicon-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="socicon-linkedin"></i>
+                            </a>
+                            <a href="#">
+                                <i class="socicon-viadeo"></i>
+                            </a>
+                            <a href="#">
+                                <i class="socicon-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="app.js"></script>
+</body>
+
+</html>
