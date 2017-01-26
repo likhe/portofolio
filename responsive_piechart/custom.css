@@ -30,7 +30,7 @@ main {
 }
 /***********hamburger nav******************/
 .button_container {
-  position: fixed;
+  position: absolute;
   top: 5%;
   left: 5%;
   height: 27px;
