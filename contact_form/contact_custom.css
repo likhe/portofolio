@@ -1,0 +1,473 @@
+body {
+	background-image:url('img/paper.jpg');
+	background-size: cover;
+	background-repeat:no-repeat;
+}
+/*****************default font**********************/
+@font-face {
+	font-family:'Rythmus';
+	src:url('fonts/rythmus.ttf');
+}
+*a {
+	font-family:'Rythmus';
+}
+/***************logo*************************/
+.logo-frame, .logo {
+	margin-top:-0.5em;
+	text-align: center;
+}
+
+.logo {
+	max-width: 15vw;
+	max-height: 100%;
+}
+/*******************menu*******************************/
+/***********hamburger nav******************/
+.button_container {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-transition: opacity .25s ease;
+  transition: opacity .25s ease;
+}
+/*************manage the hover******************/
+.button_container:hover {
+  opacity: .7;
+}
+/***********the first span class to react*********************/
+.button_container.active .top {
+  -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
+  transform: translateY(11px) translateX(0) rotate(45deg);
+  background: #FFF;
+}
+/***********the second span class to diseappear*********************/
+.button_container.active .middle {
+  opacity: 0;
+  background: #FFF;
+}
+/***********the last span class to react*********************/
+.button_container.active .bottom {
+  -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
+  transform: translateY(-11px) translateX(0) rotate(-45deg);
+  background: #FFF;
+}
+/*********the style of ligns*******************/
+.button_container span {
+  background: #d5d5d5;
+  position: absolute;
+  top: 2%;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  -webkit-transition: all .35s ease;
+  transition: all .35s ease;
+  cursor: pointer;
+}
+/**************position of the second and third span**************/
+.button_container .middle {
+  top: 11px;
+}
+
+.button_container .bottom {
+  top: 22px;
+}
+/***********the hidden nav*****************/
+.overlay {
+  position: fixed;
+  background: #d5d5d5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .35s, visibility .35s, height .35s;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+}
+/*************open class created by jquery****************/
+.overlay.open {
+  opacity: .9;
+  visibility: visible;
+  height: 100%;
+}
+/*********animation of the ****************/
+.overlay.open li {
+  -webkit-animation: fadeInTop .5s ease forwards;
+  animation: fadeInTop .5s ease forwards;
+  -webkit-animation-delay: .35s;
+  animation-delay: .35s;
+}
+/********animate the apparition of each menu***********************/
+.overlay.open li:nth-of-type(2) {
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s;
+}
+
+.overlay.open li:nth-of-type(3) {
+  -webkit-animation-delay: .45s;
+  animation-delay: .45s;
+}
+
+.overlay.open li:nth-of-type(4) {
+  -webkit-animation-delay: .50s;
+  animation-delay: .50s;
+}
+/**********the window*************************/
+.overlay nav{
+  position: relative;
+  height: 70%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 3em;
+  text-align: center;
+}
+/***********the master of the list***- manage space between each option***********/
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+}
+
+.overlay ul li {
+  display: block;
+  height: calc(100% / 4);
+  min-height: 1em;
+  position: relative;
+  opacity: 0;
+}
+
+.overlay ul li a {
+  display: block;
+  position: relative;
+  color: #FFF;
+  text-decoration: none;
+  overflow: hidden;
+}
+/**************hover in each list****************/
+.overlay ul li a:hover {
+  color: gold;
+  -webkit-transition: color 1s ease;
+  -moz-transition: color 1s ease;
+  -o-transition: color 1s ease;
+  transition: color 1s ease;
+}
+
+/***********animation******************/
+@-webkit-keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    top: 20%;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    top: 20%;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+
+/***********languages flag size*******************/
+#lg  {
+	text-align: center;
+}
+
+#lg ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#lg ul li { 
+	display: inline; 
+}
+
+#lg ul li a {
+	text-decoration: none;
+	padding: .3em;
+}
+
+
+#feedback-page{
+	text-align:center;
+}
+
+/**************the form*********************/
+@media only screen and (max-width: 580px) {
+	#form-container{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+
+
+#form-main{
+	width:100%;
+	float:left;
+	padding-top:0px;
+}
+
+
+#form-container {
+	background-color:rgba(72,72,72,0.4);
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 450px;
+	float: left;
+	left: 50%;
+	position: absolute;
+	margin-top:30px;
+	margin-left: -260px;
+	border-radius: 7px;
+		-moz-border-radius: 7px;
+		-webkit-border-radius: 7px;
+}
+/*---------all input container----------------*/
+.feedback-input {
+	background-color: inherit;
+	color:#3c3c3c;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight:500;
+	font-size: 1em;
+	opacity: .5;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 1em;
+	width: 100%;
+	box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+	border: 3px solid rgba(0,0,0,0);
+	border-bottom: 3px solid black;
+}
+
+.feedback-input:focus{
+	box-shadow: 0;
+	border: 3px solid red;
+	color: red;
+	outline: none;
+	padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+/*Placeholder -----------------------------*/
+::input-placeholder {
+	color: black;
+}
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: black;
+}
+	::-moz-placeholder { /* Firefox 19+ */
+	color: black;
+}
+	:-moz-placeholder { /* Firefox 18- */
+	color: black;
+}
+	:-ms-input-placeholder { /* IE 10+ */
+	color: black;
+}
+
+/* Icons inside each input ---------------------------------- */
+#name{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#name:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+#object{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#object:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+#email{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#comment{
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+/*************input and textarea************/
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+/**********the button *************************/
+
+#button-blue{
+	font-family: Arial, Helvetica, sans-serif;
+	float:left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: #3498db;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: #0493bd;
+}
+/**********the submit button**********************/
+.submit:hover {
+	color: #3498db;
+}
+/*****************WTF?******************/
+.ease {
+	width: 0px;
+	height: 74px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+/*********fix the footer*********************/
+#footer  {
+	bottom:0;
+	width: 100%;
+	height: 5em;
+}
+/*************credits and social network****************************/
+.credits, .share {
+  margin: 0 auto;
+}
+/**************wrapper footer*****************************/
+.limit {
+	width: 100vw;
+	height: 10vh;
+}
+
+/***************credits content**********************/
+
+.credits {
+    padding: 10px;
+    margin: 0 auto;
+	
+}
+
+.credits span {
+	margin-right: 15px;
+}
+/***********social network******************/
+.share .col {
+	margin-right: -2vh;
+}
+/************socicon defaults*******************/
+@font-face {
+  font-family: "socicon";
+  src:url("socicon/fonts/socicon.eot");
+  src:url("socicon/fonts/socicon.eot?#iefix") format("embedded-opentype"),
+    url("socicon/fonts/socicon.woff") format("woff"),
+    url("socicon/fonts/socicon.ttf") format("truetype"),
+    url("socicon/fonts/socicon.svg#socicon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/**************icons***************************/
+
+[class*="socicon-"] {
+    border-radius: 50%;
+    padding: 10px 14px;
+	margin-right: 4px;
+    transition: .5s;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    background-color: #322f30;
+}
+[class*="socicon-"] a:hover {
+    background-color: #e25714;
+}
+.socicon-twitter:hover {
+    background-color: #00aced;
+}
+
+.socicon-github:hover {
+    background-color: #3b2e8c;
+}
+
+.socicon-viadeo:hover {
+    background-color: #f47d21;
+}
+
+.socicon-linkedin:hover {
+    background-color: #0073a4;
+}

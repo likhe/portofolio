@@ -1,0 +1,300 @@
+body {
+    background-image: url('img/paper.jpg');
+    background-size: cover;
+}
+
+
+/*****************default font**********************/
+
+@font-face {
+    font-family: 'Rythmus';
+    src: url('fonts/rythmus.ttf');
+}
+
+*a {
+    font-family: 'Rythmus';
+}
+
+
+/***************logo*************************/
+
+.logo-frame, .logo {
+    margin-top: -0.5em;
+    text-align: center;
+}
+
+.logo {
+    height: 120px;
+}
+
+
+/***********languages flag size*******************/
+
+#lg {
+    text-align: center;
+}
+
+#lg ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#lg ul li {
+    display: inline;
+}
+
+#lg ul li a {
+    text-decoration: none;
+    padding: .3em;
+}
+
+
+/****************timeline*********************/
+
+.cbp_tmtimeline {
+    margin: 30px 0 0 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+
+/* The line */
+
+.cbp_tmtimeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    background: #afdcf8;
+    left: 20%;
+    margin-left: -10px;
+}
+
+.cbp_tmtimeline>li {
+    position: relative;
+}
+
+
+/* The date/time */
+
+.cbp_tmtimeline>li .cbp_tmtime {
+    display: block;
+    width: 25%;
+    padding-right: 100px;
+    position: absolute;
+}
+
+.cbp_tmtimeline>li .cbp_tmtime span {
+    display: block;
+    text-align: right;
+}
+
+.cbp_tmtimeline>li .cbp_tmtime span:first-child {
+    font-size: 0.9em;
+    color: #bdd0db;
+}
+
+.cbp_tmtimeline>li .cbp_tmtime span:last-child {
+    font-size: 2.9em;
+    color: #3594cb;
+}
+
+.cbp_tmtimeline>li:nth-child(odd) .cbp_tmtime span:last-child {
+    color: #6cbfee;
+}
+
+
+/*******date only on phone*****************/
+
+.date-phone {
+    visibility: hidden;
+}
+
+
+/* Right content */
+
+.cbp_tmtimeline>li .cbp_tmlabel {
+    margin: 0 0 15px 25%;
+    background: #3594cb;
+    color: #fff;
+    padding: 2em;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.4;
+    position: relative;
+    border-radius: 5px;
+}
+
+.cbp_tmtimeline>li:nth-child(odd) .cbp_tmlabel {
+    background: #6cbfee;
+}
+
+.cbp_tmtimeline>li .cbp_tmlabel h2 {
+    margin-top: 0px;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+
+/* The icons */
+
+.cbp_tmtimeline>li .cbp_tmicon {
+    width: 40px;
+    height: 40px;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    font-size: 1.4em;
+    line-height: 40px;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    color: #fff;
+    background: #46a4da;
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px #afdcf8;
+    text-align: center;
+    left: 20%;
+    top: 0;
+    margin: 0 0 0 -25px;
+}
+
+
+/* Example Media Queries */
+
+@media screen and (max-width: 65.375em) {
+    .cbp_tmtimeline>li .cbp_tmtime span:last-child {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .cbp_tmtimeline:before {
+        display: none;
+    }
+    .cbp_tmtimeline>li .cbp_tmtime {
+        width: 100%;
+        position: relative;
+        padding: 0 0 20px 0;
+    }
+    .cbp_tmtimeline>li .cbp_tmtime span {
+        text-align: left;
+    }
+    .cbp_tmtimeline>li .cbp_tmlabel {
+        margin: 0 0 30px 0;
+        padding: 1em;
+        font-weight: 400;
+        font-size: 95%;
+    }
+    .cbp_tmtimeline>li .cbp_tmlabel:after {
+        right: auto;
+        left: 20px;
+        border-right-color: transparent;
+        border-bottom-color: #3594cb;
+        top: -20px;
+    }
+    .cbp_tmtimeline>li:nth-child(odd) .cbp_tmlabel:after {
+        border-right-color: transparent;
+        border-bottom-color: #6cbfee;
+    }
+    .cbp_tmtimeline>li .cbp_tmicon {
+        display: none;
+    }
+    .date-phone {
+        visibility: visible;
+    }
+}
+
+
+/*******************************************************/
+
+.credits-wrapper {
+    margin: -5vh;
+}
+
+
+/*************credits and social network****************************/
+
+.credits, .share {
+    margin: -5vh auto;
+}
+
+
+/**************wrapper footer*****************************/
+
+.limit {
+    width: 100vw;
+    height: 10vh;
+}
+
+
+/***************credits content**********************/
+
+.credits {
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.credits span {
+    text-align: center;
+    margin-right: 15px;
+}
+
+
+/***********social network******************/
+
+.share .col {
+    margin-right: -2vh;
+}
+
+
+/************socicon defaults*******************/
+
+@font-face {
+    font-family: "socicon";
+    src: url("socicon/fonts/socicon.eot");
+    src: url("socicon/fonts/socicon.eot?#iefix") format("embedded-opentype"),
+    url("socicon/fonts/socicon.woff") format("woff"),
+    url("socicon/fonts/socicon.ttf") format("truetype"),
+    url("socicon/fonts/socicon.svg#socicon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/**************icons***************************/
+
+[class*="socicon-"] {
+    border-radius: 50%;
+    padding: 10px 14px;
+    transition: .5s;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    background-color: #322f30;
+}
+
+[class*="socicon-"] a:hover {
+    background-color: #e25714;
+}
+
+.socicon-twitter:hover {
+    background-color: #00aced;
+}
+
+.socicon-github:hover {
+    background-color: #3b2e8c;
+}
+
+.socicon-viadeo:hover {
+    background-color: #f47d21;
+}
+
+.socicon-linkedin:hover {
+    background-color: #0073a4;
+}

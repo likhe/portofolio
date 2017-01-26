@@ -1,0 +1,393 @@
+/************reset********************/
+
+body {
+    margin: 0;
+    padding: 0;
+	text-align: center;
+	overflow: unset;
+    -webkit-font-smoothing: antialiased;
+	background-image: radial-gradient(center center, circle cover, #ffeda3, #ffc800);
+	background-image: -webkit-radial-gradient(center center, circle cover, #ffeda3, #ffc800);
+	background-image: -moz-radial-gradient(center center, circle cover, #ffeda3, #ffc800);
+	background-image: -o-radial-gradient(center center, circle cover, #ffeda3, #ffc800);
+	background-image: -ms-radial-gradient(center center, circle cover, #ffeda3, #ffc800);
+}
+body,
+html {
+	height: 100vh;
+}
+* a {
+    text-decoration: none;
+	color: white;
+}
+
+* ul {
+    list-style-type: none;
+    color: white;
+}
+
+/********************wrapper of the page**********************************/
+.wrapper {
+	margin-bottom: -10vh;
+}
+
+/***********************************header*****************************/
+#header {
+    width: 100vw;
+    background-color: blue;
+	
+}
+/*************the content of the header****************************/
+.logo, .lg, .menu {
+	width:calc(100%/3);
+	height: 10vh;
+}
+/***************logo*************************/
+.logo {
+	position: absolute;
+	top:0;
+	left:0;
+	width: 20vw;
+	height: 10vh;
+}
+.logo img {
+	width: 10vw;
+	height: 10vh;
+}
+/********************navigation bar*************************/
+.menu {
+	position: absolute;
+	text-align: center;
+	background-color: purple;
+	top:0;
+	left: 20vw;
+	width:60vw;
+}
+.home, 
+.works, 
+.resume,
+.contact{
+	line-height: 10vh;
+	padding: .3em;
+	margin: .3em;
+}
+/***********languages flag size*******************/
+#lg  {
+	position: absolute;
+	top:0;
+	right:0;
+	width:20vw;
+	height: 10vh;
+}
+
+#lg ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+#lg ul li { 
+	display: inline; 
+}
+
+#lg ul li a {
+	text-decoration: none;
+	padding: .3em;
+}
+
+#lg img {
+    width: 24px;
+	height: 24px;
+}
+/*********************the content********************/
+
+.content {
+max-width:100vw;
+min-height:100%;
+margin:0 auto;
+position:relative;
+}
+
+/****************the form**************************************/
+
+#form-main{
+	margin-top: 20vh;
+	width:100%;
+	float:left;
+	padding-top:0px;
+}
+
+#form-container {
+	background-color:rgba(72,72,72,0.4);
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 450px;
+	float: left;
+	left: 50%;
+	position: absolute;
+	margin-top:30px;
+	margin-left: -260px;
+	border-radius: 7px;
+		-moz-border-radius: 7px;
+		-webkit-border-radius: 7px;
+}
+/*---------all input container----------------*/
+.feedback-input {
+	background-color: inherit;
+	color:#3c3c3c;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight:500;
+	font-size: 1em;
+	opacity: .5;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 1em;
+	width: 100%;
+	box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+	border: 3px solid rgba(0,0,0,0);
+	border-bottom: 3px solid black;
+}
+
+.feedback-input:focus{
+	box-shadow: 0;
+	border: 3px solid red;
+	color: red;
+	outline: none;
+	padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+/*Placeholder -----------------------------*/
+::input-placeholder {
+	color: black;
+}
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: black;
+}
+	::-moz-placeholder { /* Firefox 19+ */
+	color: black;
+}
+	:-moz-placeholder { /* Firefox 18- */
+	color: black;
+}
+	:-ms-input-placeholder { /* IE 10+ */
+	color: black;
+}
+
+/* Icons inside each input ---------------------------------- */
+#name{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#name:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+#object{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#object:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+#email{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#email:focus{
+	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+	background-size: 30px 30px;
+  background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#comment{
+	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+/********************buttons******************************/
+#button-blue{
+	font-family: Arial, Helvetica, sans-serif;
+	float:left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: #3498db;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: #0493bd;
+}
+	
+.submit:hover {
+	color: #3498db;
+}
+	
+.ease {
+	width: 0px;
+	height: 74px;
+	background-color: #fbfbfb;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+@media only screen and (max-width: 580px) {
+	#form-container{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+
+
+/*************foooter********************/
+
+#footer {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  background-color: gray;
+  text-align: center;
+  margin-bottom: -400px;
+}
+/*************credits and social network****************************/
+#footer .credits, .share {
+  display: block;
+  margin: 0 auto;
+}
+
+
+/***************credits content**********************/
+
+.credits {
+    float: left;
+    padding: 30px;
+    margin: auto;
+}
+
+.credits span {
+	margin-right: 15px;
+}
+/***********social network******************/
+
+.share {
+	float: right;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+/********content of social network***********/
+
+.share [class*="socicon-"] {
+    float: right;
+}
+
+
+/**************icons***************************/
+
+[class*="socicon-"] {
+    vertical-align: top;
+    display: inline;
+    border-radius: 50%;
+    padding: 10px 14px;
+	margin-right: 4px;
+    transition: .5s;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+}
+
+[class*="socicon-"] a:hover {
+    background-color: #e25714;
+}
+
+.socicon-twitter {
+    background-color: #322f30;
+}
+
+.socicon-twitter:hover {
+    background-color: #00aced;
+}
+
+.socicon-github {
+    background-color: #322f30;
+}
+
+.socicon-github:hover {
+    background-color: #eb8231;
+}
+
+.socicon-viadeo {
+    background-color: #322f30;
+}
+
+.socicon-viadeo:hover {
+    background-color: #e64a41;
+}
+
+.socicon-linkedin {
+    background-color: #322f30;
+}
+
+.socicon-linkedin:hover {
+    background-color: #0073a4;
+}
