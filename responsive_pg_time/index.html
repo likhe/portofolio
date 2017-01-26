@@ -7,14 +7,13 @@
     <meta name="viewport" content="width=device-width" />
     <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
     <link rel="stylesheet" href="custom.css">
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="wrapper">
         <header class="row">
-            <!--the logo-->
+            <!-------------------the logo------------------------------->
             <div class="col">
                 <div class="logo-frame">
                     <img class="logo" src="img/logo.png" />
@@ -36,48 +35,57 @@
         </header>
         <main class="wrapper">
             <section class="row">
-                <div class="col"></div>
-                <!-------avatar part-------------->
-                <div class="col">
-                    <div class="avatar">
-                        <div class="frame">
-                            <a href="#">
-                                <img class="avatar_face" src="avatar_icons/Original.png" />
-                            </a>
+                <ul class="col cbp_tmtimeline">
+                    <li>
+                        <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                        <time class="cbp_tmtime" datetime="2013-04-10"><span class="date-phone">4/10/13</span></time>
+                        <div class="cbp_tmlabel">
+                          <h2></h2>
+                          <p></p>
                         </div>
-                    </div>
-                </div>
-                <div class="col"></div>
-            </section>
-            <!-------the hidden link------------------------->
-            <section class="row">
-                <div class="col"></div>
-                <div class="hide col">
-                    <p class="second-font"><a href="#">Curriculum Vitae</a></p>
-                </div>
-                <div class="col"></div>
-            </section>
-            <!--title part---->
-            <section class="row">
-                <div class="col">
-                    <h1>Linda Khelifi</h1>
-                </div>
-            </section>
-            <!---project title part------->
-            <section class="row">
-                <div class="col"></div>
-                <div class="col">
-                    <p class="second-font"><a href="">Projets</a></p>
-                </div>
-                <div class="col"></div>
-            </section>
-            <section class="row">
-                <div class="col"></div>
-            </section>
-            <section class="row">
-                <div class="col"></div>
+                    </li>
+                    <li>
+                        <time class="cbp_tmtime" datetime="2013-04-11"><span class="date-phone">4/10/13</span></time>
+                        <div class="cbp_tmicon cbp_tmicon-screen"></div>
+                        <div class="cbp_tmlabel">
+                          <h2></h2>
+                          <p></p>
+                        </div>
+                    </li>
+                    <li>
+                        <time class="cbp_tmtime" datetime="2013-04-13"><span class="date-phone">4/10/13</span></time>
+                        <div class="cbp_tmicon cbp_tmicon-mail"></div>
+                        <div class="cbp_tmlabel">
+                          <h2></h2>
+                          <p></p>
+                        </div>
+                    </li>
+                    <li>
+                        <time class="cbp_tmtime" datetime="2013-04-15"><span class="date-phone">4/10/13</span></time>
+                        <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                        <div class="cbp_tmlabel">
+                          <h2></h2>
+                          <p></p>
+                        </div>
+                    </li>
+                    <li>
+                        <time class="cbp_tmtime" datetime="2013-04-16"><span class="date-phone">4/10/13</span></time>
+                        <div class="cbp_tmicon cbp_tmicon-earth"></div>
+                        <div class="cbp_tmlabel">
+                          <h2></h2>
+                          <p></p>
+                        </div>
+                    </li>
+                </ul>
             </section>
         </main>
+        <section class="wrapper">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col"></div>
+            </div>
+
+        </section>
         <footer class="row">
             <div class="col">
                 <!------credits nav---------->
@@ -112,7 +120,8 @@
             </div>
         </footer>
     </div>
-    <script src="app.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js" charset="utf-8"></script>
+    <script src="timeline/app_time.js"></script>
 </body>
 
 </html>
