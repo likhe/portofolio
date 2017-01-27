@@ -12,20 +12,20 @@ body {
 }
 /***************logo*************************/
 .logo-frame, .logo {
-	margin-top:-0.5em;
+	margin-top: 0.2em;
 	text-align: center;
 }
 
 .logo {
-	max-width: 15vw;
+	width: 120px;
 	max-height: 100%;
 }
 /*******************menu*******************************/
 /***********hamburger nav******************/
 .button_container {
   position: absolute;
-  top: 2%;
-  left: 50%;
+  top: 35%;
+  left: 10%;
   height: 27px;
   width: 35px;
   cursor: pointer;
