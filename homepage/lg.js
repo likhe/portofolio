@@ -10,9 +10,15 @@ let translationArr = {
     'fr' : {
         'cv': "Curriculum Vitae",
         'pj': "Portfolio",
-        'legal': "Mentions légales",
+        'legal': "Mentions",
         'contact': "Contact"
     },
+    'pt' : {
+      'cv': "Curricolo",
+      'pj': "Portfolio",
+      'legal': "Mençoes legais",
+      'contact': "Contacto"
+    }
 };
 /**************loop lang elements to each item when element translate class is clicked***************/
 $(function() {
