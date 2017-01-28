@@ -8,6 +8,7 @@ let translationArr = {
 		'about': "Subject",
 		'sms': "Comments",
 		'send': "Send",
+		'reset': "Reset",
         'legal': "Mentions",
         'contact': "Contact"
 		
@@ -18,6 +19,7 @@ let translationArr = {
 		'about': "A propos",
 		'sms': "Votre message",
 		'send': "Envoyer",
+		'reset': "Recommencer",
         'legal': "Mentions légales",
         'contact': "Contact"
     },
