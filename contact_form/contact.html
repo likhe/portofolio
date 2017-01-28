@@ -36,16 +36,16 @@
 			</div>
 <!-----languages part----->
 			<div class="col">
-				<div id="lg">
-						<ul>
-							<li class="fr">
-								<a href="#">FR</a>
-							</li>
-							<li class="en">
-								<a href="#">EN</a>
-							</li>
-						</ul>
-					</div>
+                <div id="lg">
+                    <ul>
+                        <li class="translate" id="fr">
+                            <a href="#">FR</a>
+                        </li>
+                        <li class="translate" id="en">
+                            <a href="#">EN</a>
+                        </li>
+                    </ul>
+                </div>
 				</div>
 			</div>
 		</header>
@@ -60,24 +60,24 @@
 				<!---the form------>
 								<form action="mailto:likhelifi@laposte.net" method="post">
 									<div class="name-area">
-										<label for="name">Nom</label>
+										<label for="name" class="lang" key="name">Votre nom</label>
 										<input type="text" id="name" name="user_name" />
 									</div>
 									<div class="mail-area">
-										<label for="mail">E-mail</label>
+										<label for="mail" class="lang" key="email">E-mail</label>
 										<input type="email" id="mail" name="user_mail" />
 									</div>
 									<div class="object-area">
-										<label for="object">A propos</label>
+										<label for="object" class="lang" key="about">A propos</label>
 										<input type="text" id="object" name="object_user">
 									</div>
 									<div class="message-area">
-										<label for="message">Message</label>
+										<label for="message" class="lang" key="sms">Message</label>
 										<textarea id="message" name="user_message"></textarea>
 									</div>
 
 								<div class="submit">
-						<input type="submit" value="ENVOYER" id="button-blue"/>
+								<button type="submit" id="button-blue" class="lang" key="send">Envoyer</button>
 								</div>
 					</form>
 				<!--end of form-->
@@ -89,40 +89,31 @@
 				<div class="col"></div>
 			</section>
 		</main>
-		<div class="wrapper">
-		<footer class="row">
+		<footer class="wrapper">
+		<div class="row">
+			<div class="col"></div>
             <div class="col">
                 <!------credits nav---------->
                 <div class="credits-wrapper wrapper">
                     <nav class="credits row">
-                        <span class="col"><small>&copy; <strong>2017</strong></small></span>
+                        <span class="col"><small>&copy;<strong>2017</strong></small></span>
                         <span class="col"><a href="#" class="lang" key="legal">Mentions</a></span>
                         <span class="col"><a href="#" class="lang" key="contact">Contact</a></span>
                     </nav>
                 </div>
             </div>
-            <!---social icons--------------------->
-            <div class="col">
-                <div class="wrapper">
-                    <div class="share row">
-                        <div class="col">
-                            <a href="#">
-                            </a>
-                            <a href="#">
-                            </a>
-                            <a href="#">
-                            </a>
-                            <a href="#">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-	</div>
-<!------the script-------------------
+			<div class="col"></div>
+			<div class="row">
+				<div class="col"></div>
+	            <!---social icons--------------------->
+				<div class="col"></div>
+				<div class="col"></div>	
+			</div>
+        </div>
+	</footer>
+<!------the script------------------->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="app_jq.js"></script>
-	--->
+
 </body>
 </html>
