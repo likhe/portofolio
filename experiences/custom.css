@@ -109,10 +109,9 @@ body {
     margin: 0 2em 1.5em 13em;
 	padding-top: .5em;
     padding: 1.5em;
-    font-size: 1.2em;
     line-height: 1.2em;
     position: relative;
-    border-radius: 5px;
+    border-radius: 5%;
 }
 
 .cbp_tmtimeline>li:nth-child(odd) .cbp_tmlabel {
