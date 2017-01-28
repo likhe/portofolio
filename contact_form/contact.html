@@ -60,27 +60,27 @@
 						<div class="row">
 							<div class="col">
 				<!---the form------>
-								<form class="form_contact" id="form1">
+								<form action="mailto:likhelifi@laposte.net" method="post">
+									<div class="name-area">
+										<label for="name">Nom:</label>
+										<input type="text" id="name" name="user_name" />
+									</div>
+									<div class="mail-area">
+										<label for="mail">E-mail:</label>
+										<input type="email" id="mail" name="user_mail" />
+									</div>
+									<div class="object-area">
+										<label for="object">A propos</label>
+										<input type="text" id="object" name="object_user">
+									</div>
+									<div class="message-area">
+										<label for="message">Message:</label>
+										<textarea id="message" name="user_message"></textarea>
+									</div>
 
-      <p class="name">
-        <input name="name" type="text" class="feedback-input" placeholder="Votre nom" id="name" />
-      </p>
-
-      <p class="email">
-        <input name="email" type="text" class="feedback-input" id="email" placeholder="Votre email" />
-      </p>
-	  <p class="object">
-        <input name="name" type="text" class="feedback-input" placeholder="Le sujet de la demande" id="object" />
-      </p>
-
-      <p class="text">
-        <textarea name="text" class="feedback-input" id="comment" placeholder="Vos remarques"></textarea>
-      </p>
-
-
-      <div class="submit">
-        <input type="submit" value="SEND" id="button-blue"/>
-			</div>
+								<div class="submit">
+						<input type="submit" value="SEND" id="button-blue"/>
+								</div>
 				
 				<!--end of form-->
 							</div>
