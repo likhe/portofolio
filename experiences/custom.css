@@ -53,7 +53,7 @@ body {
 /****************timeline*********************/
 
 .cbp_tmtimeline {
-    margin: 30px 0 0 0;
+    margin: 1em 0 0 0;
     padding: 0;
     list-style: none;
     position: relative;
@@ -87,23 +87,12 @@ body {
     position: absolute;
 }
 
-.cbp_tmtimeline>li .cbp_tmtime span {
+.cbp_tmtimeline>li .cbp_tmtime {
     display: block;
-    text-align: right;
-}
-
-.cbp_tmtimeline>li .cbp_tmtime span:first-child {
-    font-size: 0.9em;
-    color: #bdd0db;
-}
-
-.cbp_tmtimeline>li .cbp_tmtime span:last-child {
-    font-size: 2.9em;
-    color: #3594cb;
-}
-
-.cbp_tmtimeline>li:nth-child(odd) .cbp_tmtime span:last-child {
-    color: #6cbfee;
+    text-align: center;
+	margin-top: .5em;
+	margin-bottom: .5em;
+	padding-bottom:.5em;
 }
 
 
@@ -116,26 +105,26 @@ body {
 
 /* Right content */
 
-.cbp_tmtimeline>li .cbp_tmlabel {
-    margin: 0 0 15px 25%;
-    background: #3594cb;
-    color: #fff;
-    padding: 2em;
+.cbp_tmlabel {
+    margin: 0 2em 1.5em 13em;
+	padding-top: .5em;
+    padding: 1.5em;
     font-size: 1.2em;
-    font-weight: 300;
-    line-height: 1.4;
+    line-height: 1.2em;
     position: relative;
     border-radius: 5px;
 }
 
 .cbp_tmtimeline>li:nth-child(odd) .cbp_tmlabel {
-    background: #6cbfee;
+    background: yellow;
+}
+.cbp_tmtimeline>li:nth-child(even) .cbp_tmlabel {
+    background: green;
 }
 
-.cbp_tmtimeline>li .cbp_tmlabel h2 {
-    margin-top: 0px;
-    padding: 0 0 10px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+.cbp_tmlabel h3 {
+	padding: 0 0 10px 0;
+	padding-bottom: 10px;
 }
 
 
@@ -166,26 +155,20 @@ body {
 
 /* Example Media Queries */
 
-@media screen and (max-width: 65.375em) {
-    .cbp_tmtimeline>li .cbp_tmtime span:last-child {
-        font-size: 1.5em;
-    }
-}
-
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
     .cbp_tmtimeline:before {
         display: none;
     }
     .cbp_tmtimeline>li .cbp_tmtime {
         width: 100%;
         position: relative;
-        padding: 0 0 20px 0;
+        padding: .5em;
     }
-    .cbp_tmtimeline>li .cbp_tmtime span {
-        text-align: left;
-    }
-    .cbp_tmtimeline>li .cbp_tmlabel {
-        margin: 0 0 30px 0;
+	
+	.cbp_tmtimeline>li .cbp_tmlabel {
+    margin: 0;
+	}
+    li .cbp_tmlabel {
         padding: 1em;
         font-weight: 400;
         font-size: 95%;
