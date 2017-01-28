@@ -10,29 +10,56 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="row">
-            <!-------------------the logo------------------------------->
+		<div class="wrapper">
+		<header class="row">
+            <!--the menu-->
+    <div class="col">
+		<div class="button_container" id="toggle">
+			<span class="top"></span>
+			<span class="middle"></span>
+			<span class="bottom"></span>
+		</div>
+			<div class="overlay" id="overlay">
+			<nav class="overlay-menu">
+				<ul>
+					<li><a href="#">Accueil</a></li>
+					<li><a href="#">Curriculum Vitae</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+			<!--the logo-->
             <div class="col">
-                <div class="logo-frame">
+			 <div class="logo-frame">
                     <img class="logo" src="img/logo.png" />
                 </div>
-            </div>
-            <div class="col"></div>
-            <div class="col">
+			</div>
+<!-----languages part----->
+			<div class="col">
                 <div id="lg">
                     <ul>
-                        <li class="fr">
+                        <li class="translate" id="fr">
                             <a href="#">FR</a>
                         </li>
-                        <li class="en">
+                        <li class="translate" id="en">
                             <a href="#">EN</a>
                         </li>
                     </ul>
                 </div>
-            </div>
+				</div>
+			</div>
         </header>
         <main class="wrapper">
+<!----the title--------->
+			<section class="row">
+				<div class="col"></div>
+				<div class="col">
+					<h2 class="sub-title">Parcours</h2>
+				</div>
+				<div class="col"></div>
+			</section>
             <section class="row">
 <!-----the timeline-------------->
                 <ul class="col cbp_tmtimeline">
