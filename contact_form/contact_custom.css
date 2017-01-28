@@ -1,14 +1,28 @@
 body {
 	background-image:url('img/paper.jpg');
 	background-size: cover;
+	margin:0;
 }
-/*****************default font**********************/
+/************socicon defaults*******************/
+@font-face {
+  font-family: "socicon";
+  src:url("socicon/fonts/socicon.eot");
+  src:url("socicon/fonts/socicon.eot?#iefix") format("embedded-opentype"),
+    url("socicon/fonts/socicon.woff") format("woff"),
+    url("socicon/fonts/socicon.ttf") format("truetype"),
+    url("socicon/fonts/socicon.svg#socicon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*****************default font*********************/
 @font-face {
 	font-family:'Rythmus';
 	src:url('fonts/rythmus.ttf');
 }
-*a {
+* a, label, input, small {
 	font-family:'Rythmus';
+	text-decoration:none;
+	color: black;
 }
 /***************logo*************************/
 .logo-frame, .logo {
@@ -21,11 +35,10 @@ body {
 	max-height: 100%;
 }
 /*******************menu*******************************/
-/***********hamburger nav******************/
 .button_container {
   position: absolute;
-  top: 35%;
-  left: 10%;
+  top: 1em;
+  left: 1em;
   height: 27px;
   width: 35px;
   cursor: pointer;
@@ -211,6 +224,9 @@ label {
     /* To make sure that all labels have the same size and are properly aligned */
     display: inline-block;
     text-align: right;
+	padding-top: 1em;
+	padding-bottom: .5em;
+
 }
 /*************input and textarea content*********************/
 input, textarea {
@@ -314,17 +330,6 @@ textarea {
 /***********social network******************/
 .share .col {
 	margin-right: -2vh;
-}
-/************socicon defaults*******************/
-@font-face {
-  font-family: "socicon";
-  src:url("socicon/fonts/socicon.eot");
-  src:url("socicon/fonts/socicon.eot?#iefix") format("embedded-opentype"),
-    url("socicon/fonts/socicon.woff") format("woff"),
-    url("socicon/fonts/socicon.ttf") format("truetype"),
-    url("socicon/fonts/socicon.svg#socicon") format("svg");
-  font-weight: normal;
-  font-style: normal;
 }
 /**************icons***************************/
 
