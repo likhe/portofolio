@@ -24,10 +24,10 @@
             <div class="col">
                 <div id="lg">
                     <ul>
-                        <li class="fr">
+                        <li class="translate" id="fr">
                             <a href="#">FR</a>
                         </li>
-                        <li class="en">
+                        <li class="translate" id="en">
                             <a href="#">EN</a>
                         </li>
                     </ul>
@@ -53,7 +53,7 @@
             <section class="row">
                 <div class="col"></div>
                 <div class="hide col">
-                    <p class="second-font"><a href="#">Curriculum Vitae</a></p>
+                    <p class="lang second-font" key="cv"><a href="#">Curriculum Vitae</a></p>
                 </div>
                 <div class="col"></div>
             </section>
@@ -67,7 +67,7 @@
             <section class="row">
                 <div class="col"></div>
                 <div class="col">
-                    <p class="second-font"><a href="">Projets</a></p>
+                    <p class="lang second-font" key="pj"><a href="">Projets</a></p>
                 </div>
                 <div class="col"></div>
             </section>
@@ -84,8 +84,8 @@
                 <div class="credits-wrapper wrapper">
                     <nav class="credits row">
                         <span class="col"><small>&copy;</small>2017</span>
-                        <span class="col"><a href="#">Mentions</a></span>
-                        <span class="col"><a href="#">Contact</a></span>
+                        <span class="col"><a href="#" class="lang" key="legal">Mentions</a></span>
+                        <span class="col"><a href="#" class="lang" key="contact">Contact</a></span>
                     </nav>
                 </div>
             </div>
@@ -112,7 +112,8 @@
             </div>
         </footer>
     </div>
-    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="lg.js"></script>
 </body>
 
 </html>
