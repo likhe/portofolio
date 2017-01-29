@@ -17,43 +17,204 @@ body {
 
 
 /***************logo*************************/
-
 .logo-frame, .logo {
-    margin-top: -0.5em;
-    text-align: center;
+	margin-top: 0.2em;
+	text-align: center;
 }
 
 .logo {
-    height: 120px;
+	width: 120px;
+	max-height: 100%;
+}
+/*******************menu*******************************/
+.button_container {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-transition: opacity .25s ease;
+  transition: opacity .25s ease;
+}
+/*************manage the hover******************/
+.button_container:hover {
+  opacity: .7;
+}
+/***********the first span class to react*********************/
+.button_container.active .top {
+  -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
+  transform: translateY(11px) translateX(0) rotate(45deg);
+  background: #FFF;
+}
+/***********the second span class to diseappear*********************/
+.button_container.active .middle {
+  opacity: 0;
+  background: #FFF;
+}
+/***********the last span class to react*********************/
+.button_container.active .bottom {
+  -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
+  transform: translateY(-11px) translateX(0) rotate(-45deg);
+  background: #FFF;
+}
+/*********the style of ligns*******************/
+.button_container span {
+  background: #d5d5d5;
+  position: absolute;
+  top: 2%;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  -webkit-transition: all .35s ease;
+  transition: all .35s ease;
+  cursor: pointer;
+}
+/**************position of the second and third span**************/
+.button_container .middle {
+  top: 11px;
+}
+
+.button_container .bottom {
+  top: 22px;
+}
+/***********the hidden nav*****************/
+.overlay {
+  position: fixed;
+  background: #d5d5d5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .35s, visibility .35s, height .35s;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+}
+/*************open class created by jquery****************/
+.overlay.open {
+  opacity: .9;
+  visibility: visible;
+  height: 100%;
+}
+/*********animation of the ****************/
+.overlay.open li {
+  -webkit-animation: fadeInTop .5s ease forwards;
+  animation: fadeInTop .5s ease forwards;
+  -webkit-animation-delay: .35s;
+  animation-delay: .35s;
+}
+/********animate the apparition of each menu***********************/
+.overlay.open li:nth-of-type(2) {
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s;
+}
+
+.overlay.open li:nth-of-type(3) {
+  -webkit-animation-delay: .45s;
+  animation-delay: .45s;
+}
+
+.overlay.open li:nth-of-type(4) {
+  -webkit-animation-delay: .50s;
+  animation-delay: .50s;
+}
+/**********the window*************************/
+.overlay nav{
+  position: relative;
+  height: 70%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 3em;
+  text-align: center;
+}
+/***********the master of the list***- manage space between each option***********/
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+}
+
+.overlay ul li {
+  display: block;
+  height: calc(100% / 4);
+  min-height: 1em;
+  position: relative;
+  opacity: 0;
+}
+
+.overlay ul li a {
+  display: block;
+  position: relative;
+  color: #FFF;
+  text-decoration: none;
+  overflow: hidden;
+}
+/**************hover in each list****************/
+.overlay ul li a:hover {
+  color: gold;
+  -webkit-transition: color 1s ease;
+  -moz-transition: color 1s ease;
+  -o-transition: color 1s ease;
+  transition: color 1s ease;
+}
+
+/***********animation******************/
+@-webkit-keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    top: 20%;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    top: 20%;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
 }
 
 
 /***********languages flag size*******************/
-
-#lg {
-    text-align: center;
+#lg  {
+	text-align: center;
 }
 
 #lg ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 }
 
-#lg ul li {
-    display: inline;
+#lg ul li { 
+	display: inline; 
 }
 
 #lg ul li a {
-    text-decoration: none;
-    padding: .3em;
+	text-decoration: none;
+	padding: .3em;
 }
-
-
+/*************the title of category******************/
+.sub-title {
+	text-align: center;
+}
 /****************timeline*********************/
 
 .cbp_tmtimeline {
-    margin: 30px 0 0 0;
+    margin: 1em 0 0 0;
     padding: 0;
     list-style: none;
     position: relative;
@@ -87,23 +248,12 @@ body {
     position: absolute;
 }
 
-.cbp_tmtimeline>li .cbp_tmtime span {
+.cbp_tmtimeline>li .cbp_tmtime {
     display: block;
-    text-align: right;
-}
-
-.cbp_tmtimeline>li .cbp_tmtime span:first-child {
-    font-size: 0.9em;
-    color: #bdd0db;
-}
-
-.cbp_tmtimeline>li .cbp_tmtime span:last-child {
-    font-size: 2.9em;
-    color: #3594cb;
-}
-
-.cbp_tmtimeline>li:nth-child(odd) .cbp_tmtime span:last-child {
-    color: #6cbfee;
+    text-align: center;
+	margin-top: .5em;
+	margin-bottom: .5em;
+	padding-bottom:.5em;
 }
 
 
@@ -116,26 +266,26 @@ body {
 
 /* Right content */
 
-.cbp_tmtimeline>li .cbp_tmlabel {
-    margin: 0 0 15px 25%;
-    background: #3594cb;
-    color: #fff;
-    padding: 2em;
-    font-size: 1.2em;
-    font-weight: 300;
-    line-height: 1.4;
+.cbp_tmlabel {
+    margin-left: 25%;
+	margin-bottom: 5%;
+	margin-right: 5%;
+    padding: 1.5em;
+    line-height: 1.2em;
     position: relative;
-    border-radius: 5px;
+    border-radius: 5%;
 }
 
 .cbp_tmtimeline>li:nth-child(odd) .cbp_tmlabel {
-    background: #6cbfee;
+    background: yellow;
+}
+.cbp_tmtimeline>li:nth-child(even) .cbp_tmlabel {
+    background: green;
 }
 
-.cbp_tmtimeline>li .cbp_tmlabel h2 {
-    margin-top: 0px;
-    padding: 0 0 10px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+.cbp_tmlabel h3 {
+	padding: 0 0 10px 0;
+	padding-bottom: 10px;
 }
 
 
@@ -166,26 +316,20 @@ body {
 
 /* Example Media Queries */
 
-@media screen and (max-width: 65.375em) {
-    .cbp_tmtimeline>li .cbp_tmtime span:last-child {
-        font-size: 1.5em;
-    }
-}
-
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
     .cbp_tmtimeline:before {
         display: none;
     }
     .cbp_tmtimeline>li .cbp_tmtime {
         width: 100%;
         position: relative;
-        padding: 0 0 20px 0;
+        padding: .5em;
     }
-    .cbp_tmtimeline>li .cbp_tmtime span {
-        text-align: left;
-    }
-    .cbp_tmtimeline>li .cbp_tmlabel {
-        margin: 0 0 30px 0;
+	
+	.cbp_tmtimeline>li .cbp_tmlabel {
+    margin: 0;
+	}
+    li .cbp_tmlabel {
         padding: 1em;
         font-weight: 400;
         font-size: 95%;

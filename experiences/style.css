@@ -1,17 +1,9 @@
-html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, a, section, article, footer, header, nav {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
 
 body {
     height: 100vh;
     width: 100%;
 }
 
-h2, h3, h4, h5, h6, p {
-    text-align: center;
-}
 
 ol, ul {
     list-style: none;
