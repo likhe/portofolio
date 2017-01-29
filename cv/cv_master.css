@@ -1,3 +1,27 @@
+/******luggage**********/
+/*********avatar*********************/
+
+.avatar {
+    margin-top: 1vh;
+    text-align: center;
+}
+
+.frame {
+    margin: 0 auto;
+    display: inline-block;
+    background-color: red;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.arrow {
+    margin-top: 13px;
+    display: inline-block;
+    min-width: 64px;
+    min-height: 64px;
+}
+/**********************/
 body {
     background-image: url('img/paper.jpg');
     background-size: cover;
@@ -389,56 +413,3 @@ body {
 }
 
 
-/***********social network******************/
-
-.share .col {
-    margin-right: -2vh;
-}
-
-
-/************socicon defaults*******************/
-
-@font-face {
-    font-family: "socicon";
-    src: url("socicon/fonts/socicon.eot");
-    src: url("socicon/fonts/socicon.eot?#iefix") format("embedded-opentype"),
-    url("socicon/fonts/socicon.woff") format("woff"),
-    url("socicon/fonts/socicon.ttf") format("truetype"),
-    url("socicon/fonts/socicon.svg#socicon") format("svg");
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-/**************icons***************************/
-
-[class*="socicon-"] {
-    border-radius: 50%;
-    padding: 10px 14px;
-    transition: .5s;
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    background-color: #322f30;
-}
-
-[class*="socicon-"] a:hover {
-    background-color: #e25714;
-}
-
-.socicon-twitter:hover {
-    background-color: #00aced;
-}
-
-.socicon-github:hover {
-    background-color: #3b2e8c;
-}
-
-.socicon-viadeo:hover {
-    background-color: #f47d21;
-}
-
-.socicon-linkedin:hover {
-    background-color: #0073a4;
-}
