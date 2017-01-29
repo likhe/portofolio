@@ -35,12 +35,12 @@
   animation: sk-bouncedelay 1.4s infinite ease-in-out both;
 }
 
-.spinner .bounce1 {
+.spinner .circleI {
   -webkit-animation-delay: -0.32s;
   animation-delay: -0.32s;
 }
 
-.spinner .bounce2 {
+.spinner .circleII {
   -webkit-animation-delay: -0.16s;
   animation-delay: -0.16s;
 }
