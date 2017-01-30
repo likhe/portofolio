@@ -3,6 +3,7 @@
 let translationArr = {
     'en' : {
         'cv': "Resume",
+        'job':"Web integrator",
         'pj': "Works",
         'legal': "Mentions",
         'contact': "Contact"
@@ -10,12 +11,14 @@ let translationArr = {
     'fr' : {
         'cv': "Curriculum Vitae",
         'pj': "Portfolio",
+        'job': "Intégratrice web",
         'legal': "Mentions",
         'contact': "Contact"
     },
     'pt' : {
       'cv': "Curricolo",
       'pj': "Portfolio",
+      'job': "Integradora de web",
       'legal': "Mençoes legais",
       'contact': "Contacto"
     }
