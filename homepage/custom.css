@@ -137,22 +137,16 @@ h1 {
 
 /***************credits content**********************/
 
-.credits {
+.credits .social{
     padding: 10px;
     margin: 0 auto;
 }
 
 .credits span {
     text-align: center;
-    margin-right: 15px;
 }
 
 
-/***********social network******************/
-
-.share .col {
-    margin-right: -2vh;
-}
 
 
 /************socicon defaults*******************/
