@@ -74,6 +74,7 @@ body {
     min-height: 64px;
 }
 
+
 /******************hidden link************************/
 
 .hide {
@@ -110,10 +111,14 @@ h1 {
     text-align: center;
     letter-spacing: .2em;
 }
+
+
 /*******************************************************/
+
 .credits-wrapper {
-  margin: -5vh;
+    margin: -5vh;
 }
+
 
 /*************credits and social network****************************/
 
@@ -171,7 +176,7 @@ h1 {
     -ms-transition: .5s;
     -moz-transition: .5s;
     -webkit-transition: .5s;
-    background-color: #322f30;
+    background-color: white;
 }
 
 [class*="socicon-"] a:hover {
