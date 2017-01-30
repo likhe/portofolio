@@ -32,17 +32,16 @@ body {
 /*******************menu*******************************/
 
 .button_container {
-    position: absolute;
-    top: 1em;
-    left: 1em;
-    height: 27px;
-    width: 35px;
-    cursor: pointer;
-    z-index: 1;
-    -webkit-transition: opacity .25s ease;
-    transition: opacity .25s ease;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 15;
+  -webkit-transition: opacity .25s ease;
+  transition: opacity .25s ease;
 }
-
 
 /*************manage the hover******************/
 
@@ -117,6 +116,7 @@ body {
     -webkit-transition: opacity .35s, visibility .35s, height .35s;
     transition: opacity .35s, visibility .35s, height .35s;
     overflow: hidden;
+    z-index: 10;
 }
 
 
@@ -320,12 +320,12 @@ body {
 
 .cbp_tmlabel {
     margin-left: 25%;
-    margin-bottom: 2%;
+    margin-bottom: 1em;
     margin-right: 5%;
     padding: 1em;
     line-height: 1.2em;
     position: relative;
-    border-radius: 10%;
+    border-radius: 10px;
 }
 
 .cbp_tmtimeline>li:nth-child(odd) .cbp_tmlabel {
