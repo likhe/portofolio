@@ -320,12 +320,12 @@ body {
 
 .cbp_tmlabel {
     margin-left: 25%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     margin-right: 5%;
-    padding: 1.5em;
+    padding: 1em;
     line-height: 1.2em;
     position: relative;
-    border-radius: 5%;
+    border-radius: 10%;
 }
 
 .cbp_tmtimeline>li:nth-child(odd) .cbp_tmlabel {
@@ -365,14 +365,8 @@ body {
 .cbp_tmtimeline>li .cbp_tmicon {
     width: 40px;
     height: 40px;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
     font-size: 1.4em;
     line-height: 40px;
-    -webkit-font-smoothing: antialiased;
     position: absolute;
     color: #fff;
     background: #46a4da;
