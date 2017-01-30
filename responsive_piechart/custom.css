@@ -19,6 +19,12 @@ main {
 	z-index:-3;
 }
 /***************logo*************************/
+
+.logo-frame, .logo {
+    margin-top: -0.5em;
+    text-align: center;
+}
+
 .logo-frame, .logo {
 	margin-top: 0.2em;
 	text-align: center;
@@ -31,8 +37,8 @@ main {
 /***********hamburger nav******************/
 .button_container {
   position: absolute;
-  top: 35%;
-  left: 10%;
+  top: 5%;
+  left: 5%;
   height: 27px;
   width: 35px;
   cursor: pointer;
@@ -271,7 +277,18 @@ main {
   font-size: .17em;
   color: gray;
 }
-
+.html .css .js .php {
+	background: red;
+}
+.wp .git .boot .jq {
+	background: yellow;
+}
+.ph .inf {
+	background: blue;
+}
+.fs .mk {
+	background: green;
+}
 .slice-left {
   clip: rect(0.5em, 0.5em, 1em, 0.5em);
    -webkit-animation-delay: 1.5s;
@@ -291,6 +308,17 @@ main {
 }
 
 /******animation****************/
+@keyframes right-slice {
+  from {
+    clip: rect(0, 50%, 0.5em, 0.5em);
+  }
+  to {
+    clip: rect(0, 1em, 0.5em, 0.5em);
+  }
+  to {
+    clip: rect(0, 1em, 1em, 0.5em);
+  }
+}
 @-webkit-keyframes right-slice {
   from {
     clip: rect(0, 50%, 0.5em, 0.5em);
@@ -300,6 +328,17 @@ main {
   }
   to {
     clip: rect(0, 1em, 1em, 0.5em);
+  }
+}
+@keyframes left-slice {
+  from {
+    clip: rect(0.5em, 0.5em, 1em, 0.5em);
+  }
+  50% {
+    clip: rect(0.5em, 0.5em, 1em, 0);
+  }
+  to {
+    clip: rect(0.3em, 0.5em, 1em, 0);
   }
 }
 @-webkit-keyframes left-slice {
