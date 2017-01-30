@@ -219,7 +219,7 @@ main {
 /******************the pies***************/
 .col-pie {
   text-align: center;
-  padding-top: 5em;
+  padding-top: 3em;
 
 }
 .pie {
@@ -244,7 +244,7 @@ main {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-  
+
 }
 /******inside the pie chart*******/
 .percent {
@@ -264,7 +264,16 @@ main {
   width: 100%;
   height: 100%;
   padding-top: 20%;
-  font-size: .16em;
+  font-size: .14em;
+  color: gray;
+}
+.js-element, .bt-element, .mk-element, .inf-element {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  padding-top: 2em;
+  font-size: .15em;
   color: gray;
 }
 .element {
@@ -355,31 +364,11 @@ main {
 
 
 
-/****************inside the footer***************************************/
-.credits-wrapper {
-  margin: -5vh;
-}
-
-/*************credits and social network****************************/
-
-.credits, .share {
-    margin: -5vh auto;
-}
-
-
-/**************wrapper footer*****************************/
-
-.limit {
-    width: 100vw;
-    height: 10vh;
-}
-
-
 /***************credits content**********************/
 
 .credits {
     padding: 10px;
-    margin: 0 auto;
+    text-align: center;
 }
 
 .credits span {
@@ -388,11 +377,6 @@ main {
 }
 
 
-/***********social network******************/
-
-.share .col {
-    margin-right: -2vh;
-}
 
 
 /************socicon defaults*******************/
