@@ -6,23 +6,50 @@ $(document).ready(function() {
     });
     /***********a var object with 2 other objects******************/
     let translationArr = {
+        'fr': {
+            'home': "Accueil",
+            'cv': "Présentation",
+            'pj': "Portfolio",
+            'contact': "Contact",
+            't': "Parcours",
+            'tn':"Foussana | Tunisie",
+            'ie':"Dublin | Irlande",
+            'pt':"Lisbonne | Portugal",
+            'tFirst': "Médiatrice numérique | Echanges Phocéens",
+            'tSecond': "Developpeur web | Formation Simplonmars",
+            'tThird': "Vendeuse | Artisans du Monde",
+            'tForth': "Agente d'accueil | UEFA",
+            'tFifth': "Master Tourisme Langues et Patrimoine | Aix-Marseille Université",
+            'tSixth': "Assistante logistique | Benetton",
+            'tSeventh': "Bibliothécaire | Aix-Marseille Université",
+            'tEighth': "Assistante de français | Ecole et Collège de Amarante",
+            'tNinth':"Assistante de Direction | Schindler Ireland",
+            'tTenth':"Programme Erasmus | Universidade Católica Portuguesa ",
+            'tEleventh': "Langues Etrangères Appliquées spécialité affaires et commerce | Aix-Marseille Université",
+           'legal': "Mentions légales"
+        },
         'en': {
+            'home': "Home",
             'cv': "Resume",
             'pj': "Works",
-            'legal': "Mentions",
-            'contact': "Contact"
-        },
-        'fr': {
-            'cv': "Curriculum Vitae",
-            'pj': "Portfolio",
-            'legal': "Mentions",
-            'contact': "Contact"
+            't': "Timeline",
+            'tn':"Foussana | Tunisia",
+            'ie':"Dublin | Ireland",
+            'pt':"Lisbon | Portugal",
+            'contact': "Contact",
+            'legal': "Mentions"
         },
         'pt': {
-            'cv': "Curricolo",
+            'home': "Início",
+            'cv': "Currículo",
             'pj': "Portfolio",
-            'legal': "Mençoes legais",
-            'contact': "Contacto"
+            't': "Histórico",
+        //    'tFirst': "",
+            'tn':"Foussana | Tunísia",
+            'ie':"Dublin | Irlândia",
+            'pt':"Lisboa | Portugal",
+            'contact': "Contato",
+            'legal': "Menções legais"
         }
     };
     /**************loop lang elements to each item when element translate class is clicked***************/
