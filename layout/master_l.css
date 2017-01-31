@@ -33,7 +33,7 @@
     font-size: 17px;
     padding: 10px;
     background: rgba(0, 0, 0, 0.8);
-    margin: 20px 0 0 0
+    margin: 20px 0 0 0;
 }
 .view p {
     font-family: Georgia, serif;
@@ -42,7 +42,7 @@
     position: relative;
     color: #fff;
     padding: 10px 20px 20px;
-    text-align: center
+    text-align: center;
 }
 .view a.info {
     display: inline-block;
@@ -58,12 +58,12 @@
 }
 
 /***********effects**********/
-.view-first img { 
+.view-first img {
     transition: all 0.2s linear;
 }
 .view-first .mask {
     opacity: 0;
-    background-color: rgba(219,127,8, 0.7); 
+    background-color: rgba(219,127,8, 0.7);
     transition: all 0.4s ease-in-out;
 }
 .view-first h2 {
@@ -71,7 +71,7 @@
     opacity: 0;
     transition: all 0.2s ease-in-out;
 }
-.view-first p { 
+.view-first p {
     transform: translateY(100px);
     opacity: 0;
 	transition: all 0.2s linear;
@@ -82,10 +82,10 @@
 }
 
 /**************core of the effect**********************/
-.view-first:hover img { 
+.view-first:hover img {
 	transform: scale(1.1);
-} 
-.view-first:hover .mask { 
+}
+.view-first:hover .mask {
 	opacity: 1;
 }
 .view-first:hover h2,

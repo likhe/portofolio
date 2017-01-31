@@ -305,23 +305,24 @@ main {
 }
 
 .view h4 {
-    text-transform: uppercase;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    font-size: .9em;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  margin-top: 20px;
 }
 
 .view p {
-    font-family: Georgia, serif;
-    font-style: italic;
-    font-size: .7em;
-    position: relative;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 12px;
+  position: relative;
+  color: #fff;
+  padding: 10px 20px 20px;
+  text-align: center;
 }
 
 .info {
@@ -331,7 +332,6 @@ main {
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     box-shadow: 0 0 1px #000;
-    margin-top: -15px;
 }
 
 .view .info:hover {
