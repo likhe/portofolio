@@ -267,6 +267,7 @@ main {
 /*************the title****/
 .title, .lang{
   text-align: center;
+  padding: 2em;
 }
 /******************the pies***************/
 
