@@ -18,7 +18,6 @@ ol, ul {
 }
 
 a, a:hover, a:active {
-    text-decoration: none;
     color: inherit;
     background-color: transparent;
 }

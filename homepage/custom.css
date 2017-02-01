@@ -5,6 +5,10 @@ body {
     color: #fff;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /*****************default font**********************/
 
@@ -55,7 +59,15 @@ body {
     padding: .3em;
 }
 
+#lg a:hover {
+    transition: all .3s ease-in;
+    transform: scale(1.3);
+    color: aqua;
+}
 
+#lg a:active {
+  color: yellow;
+}
 /*******main***********/
 
 h1 {
@@ -77,9 +89,19 @@ h1, h2, p {
     src: url('fonts/Azedo-Light.otf');
 }
 
-.second-font .lang {
+.lang.second-font a {
     letter-spacing: .4em;
     font-weight: lighter;
+}
+
+.lang.second-font a:hover {
+    transition: all .6s ease-in;
+    transform: scale(1.3);
+    color: lime;
+}
+
+.lang.second-font a:active {
+    text-decoration: line-through;
 }
 
 .second-font {
@@ -98,22 +120,70 @@ h1, h2, p {
     font-weight: normal;
     font-style: normal;
 }
+
+
 /*********social************/
+
 .social {
-  text-align: center;
+    text-align: center;
 }
+
 
 /**************icons***************************/
 
-[class*="socicon-"]a:hover {
-  transform: scale(2);
+.twitter, .linkedin, .viadeo, .github {
+    width: 100%;
+    display: inline-block;
 }
 
-[class*="socicon-"] a:hover {
-    width: 48px;
-    height: 48px;
+.twitter {
+    width: 64px;
+    height: 64px;
+    background-image: url("/home/utilisateur/Works/portofolio/Socicon/twitter.png");
 }
+
+.twitter:hover {
+    transition: all .9s ease;
+    background-image: url("/home/utilisateur/Works/portofolio/hover/twitter.png");
+}
+
+.linkedin {
+    width: 64px;
+    height: 64px;
+    background-image: url("/home/utilisateur/Works/portofolio/Socicon/linkedin.png");
+}
+
+.linkedin:hover {
+    transition: all .9s ease;
+    background-image: url("/home/utilisateur/Works/portofolio/hover/linkedin.png");
+}
+
+.viadeo {
+    width: 64px;
+    height: 64px;
+    background-image: url("/home/utilisateur/Works/portofolio/Socicon/viadeo.png");
+}
+
+.viadeo:hover {
+    transition: all .9s ease;
+    background-image: url("/home/utilisateur/Works/portofolio/hover/viadeo.png");
+}
+
+.github {
+    width: 64px;
+    height: 64px;
+    background-image: url("/home/utilisateur/Works/portofolio/Socicon/github.png");
+}
+
+.github:hover {
+    transition: all .9s ease;
+    background-image: url("/home/utilisateur/Works/portofolio/hover/github.png");
+}
+
+
 /*******credits********/
+
 .credits {
-  text-align: center;
+    text-align: center;
+    font-family: 'Azedo-Light';
 }
