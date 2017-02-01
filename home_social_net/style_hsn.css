@@ -9,59 +9,25 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
+}
+
+[class*="socicon-"] {
+    width: 2em;
+    height: 2em;
+    padding: 10px 14px;
+    background-color: red;
     color: #FFF;
     -webkit-font-smoothing: antialiased;
     text-decoration: none;
-    margin: 0;
-    padding: 0;
 }
 
-#social {
-    width: 48px;
-    height: 48px;
-    margin: 0 auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-#social ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-align: center;
-}
-
-#social ul li {
-    display: inline;
-}
-
-#social p {
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    text-align: center;
-}
-
-ul a {
-    color: #fff;
-    text-decoration: none;
-}
 
 /***********-----------------icons transitions--------------------******************/
 
 
 /****************twitter************************/
-
-.socicon-twitter {
-    padding: 10px 14px;
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    transition: .5s;
-    background-color: #322f30;
-}
 
 .socicon-twitter:hover {
     background-color: #00aced;
@@ -70,16 +36,6 @@ ul a {
 
 /***********github*************************/
 
-.socicon-github {
-    padding: 10px 14px;
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    transition: .5s;
-    background-color: #322f30;
-}
-
 .socicon-github:hover {
     background-color: #eb8231;
 }
@@ -87,28 +43,8 @@ ul a {
 
 /*************viadeo*************************/
 
-.socicon-viadeo {
-    padding: 10px 14px;
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    transition: .5s;
-    background-color: #322f30;
-}
-
 .socicon-viadeo:hover {
     background-color: #e64a41;
-}
-
-.socicon-linkedin {
-    padding: 10px 14px;
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    transition: .5s;
-    background-color: #322f30;
 }
 
 .socicon-linkedin:hover {
