@@ -1,7 +1,8 @@
 body {
-    background-image: url('img/paper.jpg');
+    background-color: #373537;
     background-size: cover;
-    text-rendering: optimizeLegibility;
+    text-rendering: geometricPrecision;
+    color: #fff;
 }
 
 
@@ -20,7 +21,8 @@ body {
 /***************logo*************************/
 
 .logo-frame, .logo {
-    margin-top: -0.5em;
+    margin-top: 2px;
+    margin-left: 2px;
     text-align: center;
 }
 
@@ -32,7 +34,10 @@ body {
 /***********languages flag size*******************/
 
 #lg {
+    margin-top: 15px;
     text-align: center;
+    font-size: 25px;
+    font-family: 'Azedo-Light';
 }
 
 #lg ul {
@@ -51,50 +56,17 @@ body {
 }
 
 
-/*********avatar*********************/
-
-.avatar {
-    margin-top: 1vh;
-    text-align: center;
-}
-
-.frame {
-    margin: 0 auto;
-    display: inline-block;
-    background-color: red;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-}
-
-.avatar_face {
-    margin-top: 13px;
-    display: inline-block;
-    min-width: 64px;
-    min-height: 64px;
-}
-
-
-/******************hidden link************************/
-
-.hide {
-    /*display: none;*/
-}
-
-
-/**************title**************************/
-
-@font-face {
-    font-family: 'Kawoszeh';
-    src: url('fonts/kawoszeh.otf');
-}
+/*******main***********/
 
 h1 {
-    font-family: 'Kawoszeh';
-    font-size: 5em;
-    letter-spacing: .2em;
-    margin: 0 auto;
+    font-family: 'Azedo-Light';
+    font-size: 3em;
+    letter-spacing: .4em;
     text-align: center;
+}
+
+h1, h2, p {
+    line-height: 3em;
 }
 
 
@@ -105,48 +77,16 @@ h1 {
     src: url('fonts/Azedo-Light.otf');
 }
 
+.second-font .lang {
+    letter-spacing: .4em;
+    font-weight: lighter;
+}
+
 .second-font {
+    font-size: 30px;
+    text-align: center;
     font-family: 'Azedo-Light';
-    font-size: 1.7em;
-    text-align: center;
-    letter-spacing: .2em;
 }
-
-
-/*******************************************************/
-
-.credits-wrapper {
-    margin: -5vh;
-}
-
-
-/*************credits and social network****************************/
-
-.credits, .share {
-    margin: -5vh auto;
-}
-
-
-/**************wrapper footer*****************************/
-
-.limit {
-    width: 100vw;
-    height: 10vh;
-}
-
-
-/***************credits content**********************/
-
-.credits .social{
-    padding: 10px;
-    margin: 0 auto;
-}
-
-.credits span {
-    text-align: center;
-}
-
-
 
 
 /************socicon defaults*******************/
@@ -158,37 +98,22 @@ h1 {
     font-weight: normal;
     font-style: normal;
 }
-
+/*********social************/
+.social {
+  text-align: center;
+}
 
 /**************icons***************************/
 
-[class*="socicon-"] {
-    border-radius: 50%;
-    padding: 10px 14px;
-    transition: .5s;
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    background-color: white;
+[class*="socicon-"]a:hover {
+  transform: scale(2);
 }
 
 [class*="socicon-"] a:hover {
-    background-color: #e25714;
+    width: 48px;
+    height: 48px;
 }
-
-.socicon-twitter:hover {
-    background-color: #00aced;
-}
-
-.socicon-github:hover {
-    background-color: #3b2e8c;
-}
-
-.socicon-viadeo:hover {
-    background-color: #f47d21;
-}
-
-.socicon-linkedin:hover {
-    background-color: #0073a4;
+/*******credits********/
+.credits {
+  text-align: center;
 }

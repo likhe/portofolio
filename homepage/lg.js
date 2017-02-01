@@ -9,9 +9,9 @@ let translationArr = {
         'contact': "Contact"
     },
     'fr' : {
-        'cv': "Curriculum Vitae",
+        'cv': "Curriculum",
         'pj': "Portfolio",
-        'job': "Intégratrice web",
+        'job': "Integratrice web",
         'legal': "Mentions",
         'contact': "Contact"
     },
