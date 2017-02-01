@@ -2,6 +2,16 @@
 $(document).ready(function() {
 	/***********a var object with 2 other objects******************/
 let translationArr = {
+	'fr' : {
+		'name': "Votre nom",
+		'email': "Votre email",
+		'about': "A propos",
+		'sms': "Votre message",
+		'send': "Envoyer",
+		'reset': "Recommencer",
+		'legal': "Mentions légales",
+		'contact': "Contact"
+	},
     'en' : {
 		'name': "Name",
 		'email': "Email",
@@ -11,18 +21,17 @@ let translationArr = {
 		'reset': "Reset",
         'legal': "Mentions",
         'contact': "Contact"
-		
-    },
-    'fr' : {
-		'name': "Votre nom",
-		'email': "Votre email",
-		'about': "A propos",
-		'sms': "Votre message",
-		'send': "Envoyer",
-		'reset': "Recommencer",
-        'legal': "Mentions légales",
-        'contact': "Contact"
-    },
+		},
+		'pt' : {
+			'name': "O nome",
+			'email': "O correio",
+			'about': "O sujeito",
+			'sms': "Messagem",
+			'send': "Enviar",
+			'reset': "Apagar",
+			'legal': "Mentions légales",
+			'contact': "Contacto"
+		},
 };
 /**************loop lang elements to each item when element translate class is clicked***************/
 $(function() {

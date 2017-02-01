@@ -207,27 +207,25 @@ body {
 	list-style-type: none;
 }
 
-#lg ul li { 
-	display: inline; 
+#lg ul li {
+	display: inline;
 }
 
 #lg ul li a {
 	text-decoration: none;
 	padding: .3em;
 }
-/**************the form*********************/
-form .name-area + .mail-area + .object-area + .message-area {
-	margin-top: 1em;
-}
 /************label content*********************/
 label {
     /* To make sure that all labels have the same size and are properly aligned */
     display: inline-block;
     text-align: right;
-	padding-top: 1em;
-	padding-bottom: .5em;
 
 }
+.lang, input {
+	margin: 2em;
+}
+
 /*************input and textarea content*********************/
 input, textarea {
     /* To make sure that all text fields have the same font settings
@@ -241,6 +239,7 @@ input, textarea {
 
     /* To harmonize the look & feel of text field border */
     border: 1px solid #999;
+
 }
 input:focus, textarea:focus {
     /* To give a little highlight on active elements */
@@ -256,6 +255,7 @@ textarea {
     /* To allow users to resize any textarea vertically
        It does not work on all browsers */
     resize: vertical;
+		margin-left: 2em;
 }
 /**********the button *************************/
 #button-blue{
@@ -266,11 +266,9 @@ textarea {
 	background-color: #3498db;
 	color:white;
 	font-size:24px;
+	width: 1em;
 	padding-top:22px;
 	padding-bottom:22px;
-			transition: all 0.3s;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
 	margin-top: 1em;
 	margin-right: .1em;
 }
@@ -321,7 +319,7 @@ textarea {
 .credits {
     padding: 10px;
     margin: 0 auto;
-	
+
 }
 
 .credits span {
