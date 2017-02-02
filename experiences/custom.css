@@ -321,7 +321,7 @@ a {
     content: '';
     position: absolute;
     top: 0;
-    bottom: 0;
+    bottom: 9em;
     width: 10px;
     background: #6f1d88;
     left: 20%;
