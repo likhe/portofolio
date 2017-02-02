@@ -20,7 +20,9 @@ a {
 *a {
     font-family: 'Rythmus';
 }
-
+.arrow:hover {
+  transform: translateY(6px);
+}
 
 /***************logo*************************/
 
