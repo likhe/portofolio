@@ -80,12 +80,16 @@ h1 {
 }
 
 h1, h2, p {
-    line-height: 3em;
+    line-height: 1em;
 }
 .space {
-  margin: 10em;
+  margin: 9em;
 }
-
+@media (max-width:465px) {
+  .space {
+    margin: 4.5em;
+  }
+}
 /*************other written elements in section content*****************************/
 
 @font-face {
