@@ -79,17 +79,32 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-family: 'Azedo-Light';
+    font-size: 2em;
+    text-align: inherit;
+}
+
 h1, h2, p {
+    font-family: 'Azedo-Light';
     line-height: 1em;
+    text-align: center;
 }
+
+
+/****space default******/
+
 .space {
-  margin: 9em;
+    margin: 9em;
 }
+
 @media (max-width:465px) {
-  .space {
-    margin: 4.5em;
-  }
+    .space {
+        margin: 1em;
+    }
 }
+
+
 /*************other written elements in section content*****************************/
 
 @font-face {
