@@ -1,41 +1,43 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <title>Responsive Page</title>
-	<meta name="viewport" content="width=device-width"/>
+    <meta charset="utf-8">
+    <title>Responsive Page</title>
+    <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="contact_custom.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-		<div class="wrapper">
-		<header class="row">
+    <div class="wrapper">
+        <header class="row">
             <!--the menu-->
-    <div class="col">
-		<div class="button_container" id="toggle">
-			<span class="top"></span>
-			<span class="middle"></span>
-			<span class="bottom"></span>
-		</div>
-			<div class="overlay" id="overlay">
-			<nav class="overlay-menu">
-				<ul>
-					<li><a href="#">Accueil</a></li>
-					<li><a href="#">Curriculum Vitae</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-	</div>
-			<!--the logo-->
             <div class="col">
-			 <div class="logo-frame">
+                <div class="button_container" id="toggle">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </div>
+                <div class="overlay" id="overlay">
+                    <nav class="overlay-menu">
+                        <ul>
+                            <li><a href="#">Accueil</a></li>
+                            <li><a href="#">Curriculum Vitae</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!--the logo-->
+            <div class="col">
+                <div class="logo-frame">
                     <img class="logo" src="img/logo.png" />
                 </div>
-			</div>
-<!-----languages part----->
-			<div class="col">
+            </div>
+            <!-----languages part----->
+            <div class="col">
                 <div id="lg">
                     <ul>
                         <li class="translate" id="fr">
@@ -44,80 +46,97 @@
                         <li class="translate" id="en">
                             <a href="#">EN</a>
                         </li>
+                        <li class="translate" id="pt">
+                            <a href="#">PT</a>
+                        </li>
                     </ul>
                 </div>
-				</div>
-			</div>
-		</header>
-		<main class="wrapper">
-			<section class="row">
-				<div class="col"></div>
-<!-------contact part-------------->
-				<div class="col">
-					<div class="wrapper">
-						<div class="row">
-							<div class="col">
-				<!---the form------>
-								<form action="mailto:likhelifi@laposte.net" method="post">
-									<div class="name-area">
-										<label for="name" class="lang" key="name">Votre nom</label>
-										<input type="text" id="name" name="user_name" />
-									</div>
-									<div class="mail-area">
-										<label for="mail" class="lang" key="email">E-mail</label>
-										<input type="email" id="mail" name="user_mail" />
-									</div>
-									<div class="object-area">
-										<label for="object" class="lang" key="about">A propos</label>
-										<input type="text" id="object" name="object_user">
-									</div>
-									<div class="message-area">
-										<label for="message" class="lang" key="sms">Message</label>
-										<textarea id="message" name="user_message"></textarea>
-									</div>
-
-								<div class="submit">
-								<button type="submit" id="button-blue" class="lang" key="send">Envoyer</button>
-								<button type="reset" id="button-blue" class="lang" key="reset">Recommencer</button>
-
-								</div>
-					</form>
-				<!--end of form-->
-							</div>
-						</div>
-					</div>					
-				</div>
-<!-----end of contact---->
-				<div class="col"></div>
-			</section>
-		</main>
-		<footer class="wrapper">
-			<div class="row">
-				<div class="col"></div>
-	        <!---social icons--------------------->
-				<div class="col">
-				
-				</div>
-				<div class="col"></div>	
-			</div>
-		<div class="row">
-			<div class="col"></div>
+            </div>
+    </div>
+    </header>
+    <main class="wrapper">
+        <section class="row">
+            <div class="col"></div>
+            <!-------contact part-------------->
             <div class="col">
-                <!------credits nav---------->
-                <div class="credits-wrapper wrapper">
-                    <nav class="credits row">
-                        <span class="col"><small>&copy;<strong>2017</strong></small></span>
-                        <span class="col"><a href="#" class="lang" key="legal">Mentions</a></span>
-                        <span class="col"><a href="#" class="lang" key="contact">Contact</a></span>
-                    </nav>
+                <div class="wrapper">
+                    <div class="row">
+                        <div class="col">
+                            <!---the form------>
+                            <!---the form------>
+                            <form action="mailto:likhelifi@laposte.net" method="post" enctype="text/plain" id="contact">
+                                <div class="name-area">
+                                    <label for="name" class="lang" key="name">Votre nom</label><br>
+                                    <input type="text" id="name" name="user_name" />
+                                </div>
+                                <div class="mail-area">
+                                    <label for="mail" class="lang" key="email">E-mail</label><br>
+                                    <input type="email" id="mail" name="user_mail" />
+                                </div>
+                                <div class="object-area">
+                                    <label for="object" class="lang" key="about">A propos</label><br>
+                                    <input type="text" id="object" name="object_user">
+                                </div>
+                                <div class="message-area">
+                                    <label for="message" class="lang" key="sms">Message</label><br>
+                                    <textarea id="message" name="user_message"></textarea>
+
+                                    <div class="submit">
+                                        <button type="submit" id="button-blue" class="lang" key="send"><a href="mailto:likhelifi@laposte.net">Envoyer</a></button>
+                                        <button type="reset" id="button-blue" class="lang" key="reset">Recommencer</button>
+                                    </div>
+
+                                </div>
+                            </form>
+                            <!--end of form-->
+                            <!--end of form-->
+                        </div>
+                    </div>
                 </div>
             </div>
-			<div class="col"></div>
+            <!-----end of contact---->
+            <div class="col"></div>
+        </section>
+    </main>
+    <footer class="wrapper">
+        <div class="row">
+            <!---social icons--------------------->
+            <nav class="col social">
+                <span>
+                      <a href="https://twitter.com/likhelifi" class="pure-button socicon-button">
+                          <div class="twitter"></div>
+                      </a>
+                </span>
+                <span>
+                  <a href="https://fr.linkedin.com/in/khelifi-linda-a6120822" class="pure-button socicon-button">
+                    <div class="linkedin"></div>
+                  </a>
+                </span>
+                <span>
+                  <a href="https://fr.linkedin.com/in/khelifi-linda-a6120822" class="pure-button socicon-button">
+                    <div class="viadeo"></div>
+                  </a>
+                </span>
+                <span>
+                  <a href="https://fr.linkedin.com/in/khelifi-linda-a6120822" class="pure-button socicon-button">
+                    <div class="github"></div>
+                  </a>
+                </span>
+            </nav>
         </div>
-	</footer>
-<!------the script------------------->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="app_jq.js"></script>
+        <!------credits---------->
+        <div class="row">
+            <div class="col"></div>
+            <nav class="col credits">
+                <span><small>&copy;</small> Linda Khelifi</span>
+            </nav>
+            <div class="col"></div>
+    </footer>
+    </div>
+    <!------the script------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="app_jq.js"></script>
 
 </body>
+
 </html>

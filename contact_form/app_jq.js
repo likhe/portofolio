@@ -11,7 +11,7 @@ let translationArr = {
 		'reset': "Reset",
         'legal': "Mentions",
         'contact': "Contact"
-		
+
     },
     'fr' : {
 		'name': "Votre nom",
@@ -20,9 +20,19 @@ let translationArr = {
 		'sms': "Votre message",
 		'send': "Envoyer",
 		'reset': "Recommencer",
-        'legal': "Mentions légales",
-        'contact': "Contact"
+    'legal': "Mentions légales",
+    'contact': "Contact"
     },
+		'pt': {
+			'name': "O nome",
+'email': "O correio",
+'about': "O sujeito",
+'sms': "Messagem",
+'send': "Enviar",
+'reset': "Apagar",
+'legal': "Mentions légales",
+'contact': "Contacto"
+		}
 };
 /**************loop lang elements to each item when element translate class is clicked***************/
 $(function() {
