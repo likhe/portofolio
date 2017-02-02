@@ -324,7 +324,7 @@ form .name-area+.mail-area+.object-area+.message-area {
 label {
     /* To make sure that all labels have the same size and are properly aligned */
     display: inline-block;
-		font-size: 30px;
+    font-size: 30px;
     padding-top: 1em;
     padding-bottom: .5em;
 }
@@ -337,13 +337,16 @@ input, textarea {
        By default, textareas have a monospace font */
     font: 1em sans-serif;
     /* To give the same size to all text field */
-    width: 80vw;
-    height: 3vh;
+    width: 50vw;
     border-radius: 5px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     /* To harmonize the look & feel of text field border */
     border: 1px solid transparent;
+}
+
+input {
+    height: 5vh;
 }
 
 input:focus, textarea:focus {
@@ -355,84 +358,43 @@ textarea {
     /* To properly align multiline text fields with their labels */
     vertical-align: top;
     /* To give enough room to type some text */
-    height: 10vh;
-    /* To allow users to resize any textarea vertically
-       It does not work on all browsers */
-    -webkit-resize: vertical;
+    height: 30vh;
 }
 
 
 /**********the button *************************/
 
-#button-blue {
-    border-radius: 20%;
-    border: #fbfbfb solid 4px;
-    cursor: pointer;
-    background-color: #3498db;
-    color: white;
-    font-size: 24px;
-    padding-top: 22px;
-    padding-bottom: 22px;
+.submit {
+    text-align: center;
+}
+#button-send, #button-reset {
+    margin-top: 1em;
     transition: all 0.3s;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
-    margin-top: 1em;
-    margin-right: .1em;
+    cursor: pointer;
+    border-radius: 20%;
+    border: #fbfbfb double 7px;
+    color: white;
+    background-color: transparent;
+    font-size: 24px;
+    padding: 22px;
 }
 
-#button-blue:hover {
-    background-color: rgba(0, 0, 0, 0);
-    color: #0493bd;
-}
-
-
-/**********the submit button**********************/
-
-.submit:hover {
-    color: #3498db;
-}
-
-
-/*****************WTF?******************/
-
-.ease {
-    width: 0px;
-    height: 74px;
-    background-color: #fbfbfb;
-    -webkit-transition: .3s ease;
-    -moz-transition: .3s ease;
-    -o-transition: .3s ease;
-    -ms-transition: .3s ease;
-    transition: .3s ease;
-}
-
-.submit:hover .ease {
-    width: 100%;
+#button-send:hover {
     background-color: white;
+    opacity: 0.3;
+    color: #373537;
+    border: #fbfbfb double 7px;
+
 }
 
-
-/*********fix the footer*********************/
-
-#footer {
-    bottom: 0;
-    width: 100%;
-    height: 5em;
-}
-
-
-/*************credits and social network****************************/
-
-.credits, .share {
-    margin: 0 auto;
-}
-
-
-/**************wrapper footer*****************************/
-
-.limit {
-    width: 100vw;
-    height: 10vh;
+#button-reset:hover {
+    background-color: white;
+    opacity: 0.3;
+    color: #373537
+    border: #fbfbfb double 7px;
+;
 }
 
 
@@ -448,43 +410,68 @@ textarea {
 }
 
 
-/***********social network******************/
+/*********social************/
 
-.share .col {
-    margin-right: -2vh;
+.social {
+    text-align: center;
 }
 
 
 /**************icons***************************/
 
-[class*="socicon-"] {
-    border-radius: 50%;
-    padding: 10px 14px;
-    margin-right: 4px;
-    transition: .5s;
-    -o-transition: .5s;
-    -ms-transition: .5s;
-    -moz-transition: .5s;
-    -webkit-transition: .5s;
-    background-color: #322f30;
+.twitter, .linkedin, .viadeo, .github {
+    width: 100%;
+    display: inline-block;
 }
 
-[class*="socicon-"] a:hover {
-    background-color: #e25714;
+.twitter {
+    width: 64px;
+    height: 64px;
+    background-image: url("/home/utilisateur/Works/portofolio/Socicon/twitter.png");
 }
 
-.socicon-twitter:hover {
-    background-color: #00aced;
+.twitter:hover {
+    transition: all .9s ease;
+    background-image: url("/home/utilisateur/Works/portofolio/hover/twitter.png");
 }
 
-.socicon-github:hover {
-    background-color: #3b2e8c;
+.linkedin {
+    width: 64px;
+    height: 64px;
+    background-image: url("/home/utilisateur/Works/portofolio/Socicon/linkedin.png");
 }
 
-.socicon-viadeo:hover {
-    background-color: #f47d21;
+.linkedin:hover {
+    transition: all .9s ease;
+    background-image: url("/home/utilisateur/Works/portofolio/hover/linkedin.png");
 }
 
-.socicon-linkedin:hover {
-    background-color: #0073a4;
+.viadeo {
+    width: 64px;
+    height: 64px;
+    background-image: url("/home/utilisateur/Works/portofolio/Socicon/viadeo.png");
+}
+
+.viadeo:hover {
+    transition: all .9s ease;
+    background-image: url("/home/utilisateur/Works/portofolio/hover/viadeo.png");
+}
+
+.github {
+    width: 64px;
+    height: 64px;
+    background-image: url("/home/utilisateur/Works/portofolio/Socicon/github.png");
+}
+
+.github:hover {
+    transition: all .9s ease;
+    background-image: url("/home/utilisateur/Works/portofolio/hover/github.png");
+}
+
+
+/*******credits********/
+
+.credits {
+    text-align: center;
+    font-family: 'Azedo-Light';
 }
