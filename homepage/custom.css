@@ -66,8 +66,10 @@ a {
 }
 
 #lg a:active {
-  color: yellow;
+    color: yellow;
 }
+
+
 /*******main***********/
 
 h1 {

@@ -100,17 +100,6 @@ body {
 }
 
 
-/**************position of the second and third span**************/
-
-.button_container .middle {
-    top: 11px;
-}
-
-.button_container .bottom {
-    top: 22px;
-}
-
-
 /***********the hidden nav*****************/
 
 .overlay {
@@ -324,9 +313,8 @@ body {
     text-align: center;
 }
 
-.info {
+h4 {
     text-decoration: none;
-    border-radius: 50%;
     padding: 8px 12px;
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
@@ -334,12 +322,8 @@ body {
     margin: 1em;
 }
 
-.view .info:hover {
+.view h4:hover {
     box-shadow: 0 0 5px #000;
-}
-
-strong {
-    font-weight: bolder;
 }
 
 
@@ -367,12 +351,12 @@ strong {
     transition: all 0.2s linear;
 }
 
-.view-first .info {
+.view-first h4 {
     opacity: 0;
     transition: all 0.2s ease-in-out;
 }
 
-.info, strong:hover {
+h4, strong:hover {
     -webkit-transform: scale(1.25);
 }
 
@@ -387,7 +371,7 @@ strong {
     opacity: 1;
 }
 
-.view-first:hover h4, .view-first:hover p, .view-first:hover a.info {
+.view-first:hover h4, .view-first:hover p, .view-first:hover ah4 {
     opacity: 1;
     transform: translateY(0px);
 }
@@ -396,6 +380,6 @@ strong {
     transition-delay: 0.1s;
 }
 
-.view-first:hover a.info {
+.view-first:hover ah4 {
     transition-delay: 0.2s;
 }

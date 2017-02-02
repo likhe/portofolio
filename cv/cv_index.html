@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
 
 <head>
@@ -15,97 +15,131 @@
     <div class="wrapper">
         <header class="row">
             <!--the menu-->
-    <div class="col">
-		<div class="button_container" id="toggle">
-			<span class="top"></span>
-			<span class="middle"></span>
-			<span class="bottom"></span>
-		</div>
-			<div class="overlay" id="overlay">
-			<nav class="overlay-menu">
-				<ul>
-					<li><a href="#">Accueil</a></li>
-					<li><a href="#">Curriculum Vitae</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-	</div>
-			<!--the logo-->
             <div class="col">
-			 <div class="logo-frame">
+                <div class="button_container" id="toggle">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </div>
+                <div class="overlay" id="overlay">
+                    <nav class="overlay-menu">
+                        <ul>
+                            <li><a href="#" class="lang" key="home">Accueil</a></li>
+                            <li><a href="#" class="lang" key="cv">Curriculum Vitae</a></li>
+                            <li><a href="#" class="lang" key="pj">Portfolio</a></li>
+                            <li><a href="#" class="lang" key="contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!--the logo-->
+            <div class="col">
+                <div class="logo-frame">
                     <img class="logo" src="img/logo.png" />
                 </div>
-			</div>
-			<!--the language-------->
+            </div>
+            <!-----languages part----->
             <div class="col">
                 <div id="lg">
                     <ul>
-                        <li class="fr">
+                        <li class="translate" id="fr">
                             <a href="#">FR</a>
                         </li>
-                        <li class="en">
+                        <li class="translate" id="en">
                             <a href="#">EN</a>
+                        </li>
+                        <li class="translate" id="pt">
+                            <a href="#">PT</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </header>
         <main class="wrapper">
-           <!--subtitle---->
+            <!--subtitle---->
             <section class="row">
-				<div class="col"><h2 class="sub-title">Curriculum</h2></div>
-			</section>
+                <div class="col">
+                    <h2 class="sub-title lang" key="cv">Curriculum</h2></div>
+            </section>
             <section class="row">
-				<div class="col"></div>
-				<div class="col">
-                    <div class="luggage">
+                <div class="col">
+
+                </div>
+            </section>
+            <section class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <div class="square">
                         <div class="frame">
-						<a href="file/CV.pdf" download>
-							<img class="arrow" src="img/download.png">
-						</a>
+                            <a href="file/CV.pdf" download>
+                                <img class="arrow" src="img/download.png">
+                            </a>
                         </div>
                     </div>
-				</div>
-				<div class="col"></div>
-			</section>
-			<section class="row">
-				<div class="col"><span class="luggage"><img src="" /></span></div>
-			</section>
+                </div>
+                <div class="col"></div>
+            </section>
             <section class="row">
-				<div class="col"><p class="parts">Chronologie</p></div>
-				<div class="col"></div>
-				<div class="col"><p class="parts">Centres d'intérêts</p></div>
-			</section>			
-		            <section class="row">
-				<div class="col"></div>
-				<div class="col"><p class="parts">Expériences</p></div>
-				<div class="col"></div>
-			</section>		
+                <div class="col"><span class="luggage"><img src="" /></span></div>
+            </section>
+            <section class="row">
+                <div class="col">
+                    <p class="parts">Chronologie</p>
+                </div>
+                <div class="col"></div>
+                <div class="col">
+                    <p class="parts">Centres d'intérêts</p>
+                </div>
+            </section>
+            <section class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <p class="parts">Expériences</p>
+                </div>
+                <div class="col"></div>
+            </section>
+            <section class="row">
+                <div class="col"></div>
+            </section>
         </main>
-	<footer class="wrapper">
-			<div class="row">
-	        <!---social icons--------------------->
-				<div class="col">
-				
-				</div>
-			</div>
-		<div class="row">
-                <!------credits nav---------->
-					<div class="col"></div>
-                    <div class="credits col">
-						<span><small>&copy;<strong>2017</strong></small></span>
-                        <span><a href="#" class="lang" key="legal">Mentions</a></span>
-                        <span><a href="#" class="lang" key="contact">Contact</a></span>
-					</div>
-					<div class="col"></div>
-				
-        </div>
-	</footer>
+        <footer class="wrapper">
+            <div class="row">
+                <!---social icons--------------------->
+                <nav class="social col">
+                    <span>
+                          <a href="https://twitter.com/likhelifi" class="pure-button socicon-button">
+                              <div class="twitter"></div>
+                          </a>
+                    </span>
+                    <span>
+                      <a href="https://fr.linkedin.com/in/khelifi-linda-a6120822" class="pure-button socicon-button">
+                        <div class="linkedin"></div>
+                      </a>
+                    </span>
+                    <span>
+                      <a href="https://fr.linkedin.com/in/khelifi-linda-a6120822" class="pure-button socicon-button">
+                        <div class="viadeo"></div>
+                      </a>
+                    </span>
+                    <span>
+                      <a href="https://fr.linkedin.com/in/khelifi-linda-a6120822" class="pure-button socicon-button">
+                        <div class="github"></div>
+                      </a>
+                    </span>
+                </nav>
+            </div>
+            <!------credits---------->
+            <div class="credits row">
+                <div class="col"></div>
+                <nav class="col credits">
+                    <span><small>&copy;</small> Linda Khelifi</span>
+                </nav>
+                <div class="col"></div>
+            </div>
+        </footer>
     </div>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="lg.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="lg.js"></script>
 </body>
 
 </html>
