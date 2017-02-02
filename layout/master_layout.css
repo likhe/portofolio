@@ -1,6 +1,12 @@
 body {
-    background-image: url('img/paper.jpg');
+    background-color: #373537;
     background-size: cover;
+    text-rendering: geometricPrecision;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
 }
 
 
@@ -11,17 +17,8 @@ body {
     src: url('fonts/rythmus.ttf');
 }
 
-*a {
-    font-family: 'Rythmus';
-}
-
 
 /***************logo*************************/
-
-.logo-frame, .logo {
-    margin-top: -0.5em;
-    text-align: center;
-}
 
 .logo-frame, .logo {
     margin-top: 0.2em;
@@ -32,8 +29,6 @@ body {
     width: 120px;
     max-height: 100%;
 }
-
-
 /***********hamburger nav******************/
 
 .button_container {
@@ -232,10 +227,13 @@ body {
 }
 
 
-/***********languages*******************/
+/***********languages flag size*******************/
 
 #lg {
+    margin-top: 15px;
     text-align: center;
+    font-size: 25px;
+    font-family: 'Azedo-Light';
 }
 
 #lg ul {
@@ -253,12 +251,23 @@ body {
     padding: .3em;
 }
 
+#lg a:hover {
+    transition: all .3s ease-in;
+    transform: scale(1.3);
+    color: aqua;
+}
 
-/****chapter***********/
+#lg a:active {
+    color: #a647ef;
+}
 
-.chapter,.lang{
+
+/*************the title****/
+
+.title, .lang {
     text-align: center;
 }
+
 
 
 /*********general rules***************/
@@ -272,7 +281,6 @@ body {
     overflow: hidden;
     position: relative;
     text-align: center;
-    box-shadow: 1px 1px 2px #e6e6e6;
     cursor: pointer;
 }
 
@@ -382,4 +390,85 @@ h4, strong:hover {
 
 .view-first:hover ah4 {
     transition-delay: 0.2s;
+}
+
+/***************************footer****************************/
+/***************************footer****************************/
+
+
+/************socicon defaults*******************/
+
+@font-face {
+    font-family: "socicon";
+    src: url("socicon/fonts/socicon.eot");
+    src: url("socicon/fonts/socicon.eot?#iefix") format("embedded-opentype"), url("socicon/fonts/socicon.woff") format("woff"), url("socicon/fonts/socicon.ttf") format("truetype"), url("socicon/fonts/socicon.svg#socicon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*********social************/
+
+.social {
+    text-align: center;
+}
+
+
+/**************icons***************************/
+
+.twitter, .linkedin, .viadeo, .github {
+    width: 100%;
+    display: inline-block;
+}
+
+.twitter {
+    width: 64px;
+    height: 64px;
+    background-image: url("Socicon/twitter.png");
+}
+
+.twitter:hover {
+    transition: all .9s ease;
+    background-image: url("hover/twitter.png");
+}
+
+.linkedin {
+    width: 64px;
+    height: 64px;
+    background-image: url("Socicon/linkedin.png");
+}
+
+.linkedin:hover {
+    transition: all .9s ease;
+    background-image: url("hover/linkedin.png");
+}
+
+.viadeo {
+    width: 64px;
+    height: 64px;
+    background-image: url("Socicon/viadeo.png");
+}
+
+.viadeo:hover {
+    transition: all .9s ease;
+    background-image: url("hover/viadeo.png");
+}
+
+.github {
+    width: 64px;
+    height: 64px;
+    background-image: url("/home/utilisateur/Works/portofolio/Socicon/github.png");
+}
+
+.github:hover {
+    transition: all .9s ease;
+    background-image: url("/home/utilisateur/Works/portofolio/hover/github.png");
+}
+
+
+/*******credits********/
+
+.credits {
+    text-align: center;
+    font-family: 'Azedo-Light';
 }
