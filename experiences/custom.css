@@ -21,7 +21,6 @@ a {
     font-family: 'Rythmus';
 }
 
-
 /***************logo*************************/
 
 .logo-frame, .logo {
@@ -345,6 +344,7 @@ a {
 .cbp_tmtimeline>li .cbp_tmtime {
     display: block;
     text-align: center;
+    font-family: "Azedo-Light";
     margin-top: .5em;
     margin-bottom: .5em;
     padding-bottom: .5em;

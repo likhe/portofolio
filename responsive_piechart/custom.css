@@ -1,6 +1,12 @@
 body {
-    background-image: url('img/paper.jpg');
+    background-color: #373537;
     background-size: cover;
+    text-rendering: geometricPrecision;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
 }
 
 
@@ -11,21 +17,8 @@ body {
     src: url('fonts/rythmus.ttf');
 }
 
-*a {
-    font-family: 'Rythmus';
-}
-
-main {
-    z-index: -3;
-}
-
 
 /***************logo*************************/
-
-.logo-frame, .logo {
-    margin-top: -0.5em;
-    text-align: center;
-}
 
 .logo-frame, .logo {
     margin-top: 0.2em;
@@ -243,10 +236,13 @@ main {
 }
 
 
-/***********languages*******************/
+/***********languages flag size*******************/
 
 #lg {
+    margin-top: 15px;
     text-align: center;
+    font-size: 25px;
+    font-family: 'Azedo-Light';
 }
 
 #lg ul {
@@ -264,10 +260,48 @@ main {
     padding: .3em;
 }
 
-/*************the title****/
-.title, .lang{
-  text-align: center;
+#lg a:hover {
+    transition: all .3s ease-in;
+    transform: scale(1.3);
+    color: aqua;
 }
+
+#lg a:active {
+    color: #a647ef;
+}
+
+
+/*************the title****/
+
+.title, .lang {
+    text-align: center;
+}
+
+
+/*******the caption***************/
+[class*="color"] {
+  display: inline-block;
+  margin-right: .5em;
+}
+.color-first {
+    width: 48px;
+    height: 24px;
+    background-color: gold;
+}
+
+.color-second {
+    width: 48px;
+    height: 24px;
+    background-color: purple;
+}
+
+.color-third {
+    width: 48px;
+    height: 24px;
+    background-color: red;
+}
+
+
 /******************the pies***************/
 
 .col-pie {
@@ -290,15 +324,49 @@ main {
 
 
 /*********manage the cut***************/
-.mk .slice-right{
-  position: absolute;
-  background-color: red;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
+
+.mk .slice-right {
+    position: absolute;
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.mk .slice-left {
+    position: absolute;
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.fs .slice-right {
+    position: absolute;
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.fs .slice-left {
+    position: absolute;
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
 }
 
 .slice-right, .slice-left {
@@ -312,25 +380,25 @@ main {
     border-radius: 50%;
 }
 
+
 /******inside the pie chart*******/
 
 .html .css .js .php {
-  background: red;
+    background: red;
 }
 
 .wp .git .boot .jq {
-  background: blue;
-  -webkit-animation-name: left-slice;
-  -webkit-animation-name: right-slice;
-
+    background: blue;
+    -webkit-animation-name: left-slice;
+    -webkit-animation-name: right-slice;
 }
 
 .ph .inf {
-  background: blue;
+    background: blue;
 }
 
 .fs .mk {
-  background: green;
+    background: green;
 }
 
 .percent {
