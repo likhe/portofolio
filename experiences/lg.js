@@ -124,7 +124,7 @@ $(document).ready(function() {
         },
         'pt': {
             'home': "Início",
-            'cv': "Currículo"
+            'cv': "Currículo",
             'pj': "Portfólio",
             't': "Histórico",
             'tFirst': "Animadora| Echanges Phocéens",
