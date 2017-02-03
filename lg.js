@@ -1,26 +1,29 @@
 "use strict";
 /***********a var object with 2 other objects******************/
 let translationArr = {
-    'en' : {
-        'cv': "Resume",
-        'job':"Web integrator",
-        'pj': "Works",
-        'legal': "Mentions",
-        'contact': "Contact"
-    },
-    'fr' : {
-        'cv': "Curriculum",
+    'fr': {
+        'cv': "Curriculum Vitae",
         'pj': "Portfolio",
-        'job': "Integratrice web",
+        'introduce': "Presentation",
+        'exp': "Experiences",
+        'timeline': "Parcours",
         'legal': "Mentions",
         'contact': "Contact"
     },
-    'pt' : {
-      'cv': "Curricolo",
-      'pj': "Portfolio",
-      'job': "Integradora de web",
-      'legal': "Mençoes legais",
-      'contact': "Contacto"
+    'en': {
+        'cv': "Resume",
+        'pj': "Works",
+        'introduce': "About me",
+        'exp': "Skills",
+        'timeline': "Timeline",
+        'legal': "Mentions",
+        'contact': "Contact"
+    },
+    'pt': {
+        'cv': "Curricolo",
+        'pj': "Portfolio",
+        'legal': "Mençoes legais",
+        'contact': "Contacto"
     }
 };
 /**************loop lang elements to each item when element translate class is clicked***************/
@@ -31,7 +34,7 @@ $(function() {
         var languages = $(this).attr('id');
         /**********target the class lang for the change*************/
         $('.lang').each(function(index, element) {
-          $(this).text(translationArr[languages][$(this).attr('key')]);
+            $(this).text(translationArr[languages][$(this).attr('key')]);
 
         });
     });
