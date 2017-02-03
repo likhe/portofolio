@@ -13,7 +13,7 @@
 h1, h2, h3 ,h4 ,p, a {
     font-family: 'Azedo-Light';
     text-align: center;
-    line-height: 1em;
+    line-height: 2em;
 }
 
 h1 {
@@ -87,7 +87,7 @@ h2 {
 
 .twitter:hover {
     transition: all .9s ease;
-    background-image: url("/home/utilisateur/Works/portofolio/hover/twitter.png");
+    background-image: url("/home/utilisateur/Works/portofolio/img/hover/twitter.png");
 }
 
 .linkedin {
@@ -98,7 +98,7 @@ h2 {
 
 .linkedin:hover {
     transition: all .9s ease;
-    background-image: url("/home/utilisateur/Works/portofolio/hover/linkedin.png");
+    background-image: url("/home/utilisateur/Works/portofolio/img/hover/linkedin.png");
 }
 
 .viadeo {
@@ -109,7 +109,7 @@ h2 {
 
 .viadeo:hover {
     transition: all .9s ease;
-    background-image: url("/home/utilisateur/Works/portofolio/hover/viadeo.png");
+    background-image: url("/home/utilisateur/Works/portofolio/img/hover/viadeo.png");
 }
 .github {
     width: 64px;
@@ -119,7 +119,7 @@ h2 {
 
 .github:hover {
     transition: all .9s ease;
-    background-image: url("/home/utilisateur/Works/portofolio/hover/github.png");
+    background-image: url("/home/utilisateur/Works/portofolio/img/hover/github.png");
 }
 /**********credits************/
 .credits {

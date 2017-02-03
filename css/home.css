@@ -4,7 +4,9 @@ body {
     text-rendering: geometricPrecision;
     color: #fff;
 }
-
+* {
+  padding-bottom: 70px;
+}
 a {
     text-decoration: none;
 }
@@ -55,73 +57,10 @@ p, a, {
 }
 
 
-/************socicon defaults*******************/
-
-@font-face {
-    font-family: "socicon";
-    src: url("socicon/fonts/socicon.eot");
-    src: url("socicon/fonts/socicon.eot?#iefix") format("embedded-opentype"), url("socicon/fonts/socicon.woff") format("woff"), url("socicon/fonts/socicon.ttf") format("truetype"), url("socicon/fonts/socicon.svg#socicon") format("svg");
-    font-weight: normal;
-    font-style: normal;
-}
-
-
 /*********social************/
 
 .social {
     text-align: center;
-}
-
-
-/**************icons***************************/
-
-.twitter, .linkedin, .viadeo, .github {
-    width: 100%;
-    display: inline-block;
-}
-
-.twitter {
-    width: 64px;
-    height: 64px;
-    background-image: url("/home/utilisateur/Works/portofolio/Socicon/twitter.png");
-}
-
-.twitter:hover {
-    transition: all .9s ease;
-    background-image: url("/home/utilisateur/Works/portofolio/hover/twitter.png");
-}
-
-.linkedin {
-    width: 64px;
-    height: 64px;
-    background-image: url("/home/utilisateur/Works/portofolio/Socicon/linkedin.png");
-}
-
-.linkedin:hover {
-    transition: all .9s ease;
-    background-image: url("/home/utilisateur/Works/portofolio/hover/linkedin.png");
-}
-
-.viadeo {
-    width: 64px;
-    height: 64px;
-    background-image: url("/home/utilisateur/Works/portofolio/Socicon/viadeo.png");
-}
-
-.viadeo:hover {
-    transition: all .9s ease;
-    background-image: url("/home/utilisateur/Works/portofolio/hover/viadeo.png");
-}
-
-.github {
-    width: 64px;
-    height: 64px;
-    background-image: url("/home/utilisateur/Works/portofolio/Socicon/github.png");
-}
-
-.github:hover {
-    transition: all .9s ease;
-    background-image: url("/home/utilisateur/Works/portofolio/hover/github.png");
 }
 
 
