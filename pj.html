@@ -6,10 +6,10 @@
     <title>Linda Khelifi | Intégratrice web</title>
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="css/pj.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/reset.css">
 </head>
 
 <body>
@@ -63,10 +63,12 @@
     </header>
     <nav class="wrapper" id="overlay-laptop">
         <ul class="row">
+          <div class="col">
             <li><a href="home.html" class="lang" key="home">Accueil</a></li>
             <li><a href="cv_index.html" class="lang" key="cv">Curriculum Vitae</a></li>
             <li><a href="pj.html" class="lang" key="pj">Portfolio</a></li>
-            <li><a href="#" class="lang" key="contact">Contact</a></li>
+            <li><a href="mailto:likhelifi@laposte.net" class="lang" key="contact">Contact</a></li>
+          </div>
         </ul>
     </nav>
     <main class="wrapper">
@@ -80,7 +82,7 @@
         <section class="row">
             <div class="col">
                 <div class="view view-first">
-                    <img src="http://lorempixel.com/output/cats-q-c-640-480-6.jpg" />
+                    <img src="img/pj/truman.png"/>
                     <div class="mask">
                         <a href="https://likhe.github.io/poster/" class="info">
                             <h4 class="lang" key="at">Poster</h4>
@@ -90,93 +92,20 @@
             </div>
             <div class="col">
                 <div class="view view-first">
-                    <img src="http://lorempixel.com/output/cats-q-c-640-480-1.jpg" />
+                    <img src="img/pj/flactools.png" />
                     <div class="mask">
                         <a href="https://likhe.github.io/flactools/" class="info">
-                            <h4>Flactools</h4>
-
+                            <h4 class="lang">Flactools</h4>
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="pj col">
+            <div class="col">
                 <div class="view view-first">
-                    <img src="http://lorempixel.com/output/cats-q-c-640-480-6.jpg" />
+                    <img src="img/pj/trombi.png" width="400" height="250"/>
                     <div class="mask">
                         <a href="https://likhe.github.io/Trombi-IJL/" class="info">
-                            <h4>Trombinoscope</h4>
-
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="row">
-            <div class="col">
-                <div class="view view-first">
-                    <img src="http://lorempixel.com/output/cats-q-c-640-480-6.jpg" />
-                    <div class="mask">
-                        <a href="#" class="info">
-                            <h4>SVG</h4>
-
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="view view-first">
-                    <img src="http://lorempixel.com/output/cats-q-c-640-480-6.jpg" />
-                    <div class="mask">
-                        <a href="#" class="info">
-                            <h4>Canvas clock</h4>
-
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="view view-first">
-                    <img src="http://lorempixel.com/output/cats-q-c-640-480-1.jpg" />
-                    <div class="mask">
-                        <a href="#" class="info">
-                            <h4>Canvas</h4>
-
-                        </a>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section>
-        <section class="row">
-            <div class="col">
-                <div class="view view-first">
-                    <img src="http://lorempixel.com/output/cats-q-c-640-480-6.jpg" />
-                    <div class="mask">
-                        <a href="#" class="info">
-                            <h4>Chartjs - donut</h4>
-
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="view view-first">
-                    <img src="http://lorempixel.com/output/cats-q-c-640-480-1.jpg" />
-                    <div class="mask">
-                        <a href="#" class="info">
-                            <h4>Quizz</h4>
-
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="view view-first">
-                    <img src="http://lorempixel.com/output/cats-q-c-640-480-6.jpg" />
-                    <div class="mask">
-                        <a href="#" class="info">
-                            <h4>Slideshow</h4>
-
+                            <h4 class="lang">Trombinoscope</h4>
                         </a>
                     </div>
                 </div>
@@ -185,26 +114,43 @@
     </main>
 
 
+    <!---footer-->
     <footer class="wrapper">
         <div class="row">
-            <div class="col"></div>
             <!---social icons--------------------->
-            <div class="col">
-
-            </div>
-            <div class="col"></div>
-        </div>
+            <nav class="col social">
+                <span>
+                      <a href="https://twitter.com/likhelifi" class="pure-button socicon-button">
+                          <div class="twitter"><img src="./img/twitter.png" alt=""></div>
+                      </a>
+                </span>
+                <span>
+                  <a href="https://fr.linkedin.com/in/khelifi-linda-a6120822" class="pure-button socicon-button">
+                    <div class="linkedin"><img src="./img/linkedin.png" alt=""></div>
+                  </a>
+                </span>
+                <span>
+                  <a href="http://fr.viadeo.com/fr/profile/linda.khelifi1" class="pure-button socicon-button">
+                    <div class="viadeo"><img src="./img/viadeo.png" alt=""></div>
+                  </a>
+                </span>
+                <span>
+                  <a href="https://github.com/likhe" class="pure-button socicon-button">
+                    <div class="github"><img src="./img/github.png" alt=""></div>
+                  </a>
+                </span>
+            </nav>
+        </div>        <!------credits---------->
         <div class="row">
             <div class="col"></div>
             <nav class="col credits">
-                <span><small>&copy;</small> Linda Khelifi</span>
+                <span><small>&copy;</small>Linda Khelifi</span>
             </nav>
-
             <div class="col"></div>
-        </div>
     </footer>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="app.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

@@ -1,18 +1,11 @@
 body {
-    background-image: url('img/paper.jpg');
+    background-color: #373537;
     background-size: cover;
+    text-rendering: geometricPrecision;
+    color: #fff;
 }
-
-
-/*****************default font**********************/
-
-@font-face {
-    font-family: 'Rythmus';
-    src: url('fonts/rythmus.ttf');
-}
-
-*a {
-    font-family: 'Rythmus';
+a {
+    text-decoration: none;
 }
 
 
@@ -380,6 +373,11 @@ h4, strong:hover {
     transition-delay: 0.1s;
 }
 
-.view-first:hover ah4 {
+.view-first:hover a h4 {
     transition-delay: 0.2s;
+}
+/**********social*******************/
+.wrapper .social {
+  text-align: center;
+  margin-top: 4em;
 }
