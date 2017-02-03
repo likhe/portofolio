@@ -9,7 +9,27 @@ a {
     text-decoration: none;
 }
 
+.lang a {
+    letter-spacing: .4em;
+    font-weight: lighter;
+}
 
+.lang a:hover {
+    transition: all .6s ease-in;
+    transform: scale(1.3);
+    color: lime;
+}
+
+.lang a:active {
+    text-decoration: line-through;
+    transition: all .3s linear;
+}
+
+a {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Azedo-Light';
+}
 /*****************default font**********************/
 
 @font-face {

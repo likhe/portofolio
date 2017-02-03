@@ -242,21 +242,21 @@ a {
 }
 
 .color-first {
-    width: 48px;
-    height: 24px;
+    width: 24px;
+    height: 12px;
     background-color: gold;
 
 }
 
 .color-second {
-    width: 48px;
-    height: 24px;
+    width: 24px;
+    height: 12px;
     background-color: purple;
 }
 
 .color-third {
-    width: 48px;
-    height: 24px;
+    width: 24px;
+    height: 12px;
     background-color: red;
 }
 .pg, .wd, .dv {
