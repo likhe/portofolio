@@ -5,56 +5,70 @@
     <meta charset="utf-8">
     <title>Linda Khelifi | Intégratrice web</title>
     <meta name="viewport" content="width=device-width" />
-    <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/cv_master.css">
+    <link rel="stylesheet" href="css/skill.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/menu.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="row">
-            <!--the menu-->
-            <div class="col">
-                <div class="button_container" id="toggle">
-                    <span class="top"></span>
-                    <span class="middle"></span>
-                    <span class="bottom"></span>
-                </div>
-                <div class="overlay" id="overlay">
-                    <nav class="overlay-menu">
-                        <ul>
-                            <li><a href="#" class="lang" key="home">Accueil</a></li>
-                            <li><a href="#" class="lang" key="cv">Curriculum Vitae</a></li>
-                            <li><a href="#" class="lang" key="pj">Portfolio</a></li>
-                            <li><a href="#" class="lang" key="contact">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
+    <header class="row">
+        <!--the menu-->
+        <!--the logo middle-->
+        <div class="col">
+            <div class="fr-first">
+                <img class="logo" src="img/logo.png" />
             </div>
-            <!--the logo-->
-            <div class="col">
-                <div class="logo-frame">
-                    <img class="logo" src="img/logo.png" />
-                </div>
+        </div>
+        <div class="col">
+            <div class="button_container" id="toggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
             </div>
-            <!-----languages part----->
-            <div class="col">
-                <div id="lg">
+            <div class="overlay" id="overlay">
+                <nav class="overlay-menu">
                     <ul>
-                        <li class="translate" id="fr">
-                            <a href="#">FR</a>
-                        </li>
-                        <li class="translate" id="en">
-                            <a href="#">EN</a>
-                        </li>
-                        <li class="translate" id="pt">
-                            <a href="#">PT</a>
-                        </li>
+                        <li><a href="home.html" class="lang" key="home">Accueil</a></li>
+                        <li><a href="cv_index.html" class="lang" key="cv">Curriculum Vitae</a></li>
+                        <li><a href="pj.html" class="lang" key="pj">Portfolio</a></li>
+                        <li><a href="#" class="lang" key="contact">Contact</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
-        </header>
+        </div>
+        <!--the logo middle-->
+        <div class="col">
+            <div class="logo-frame">
+                <img class="logo" src="img/logo.png" />
+            </div>
+        </div>
+        <!-----languages part----->
+        <div class="col">
+            <div id="lg">
+                <ul>
+                    <li class="translate" id="fr">
+                        <a href="#">FR</a>
+                    </li>
+                    <li class="translate" id="en">
+                        <a href="#">EN</a>
+                    </li>
+                    <li class="translate" id="pt">
+                        <a href="#">PT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <nav class="wrapper" id="overlay-laptop">
+        <ul class="row">
+          <li><a href="home.html" class="lang" key="home">Accueil</a></li>
+          <li><a href="cv_index.html" class="lang" key="cv">Curriculum Vitae</a></li>
+          <li><a href="pj.html" class="lang" key="pj">Portfolio</a></li>
+          <li><a href="#" class="lang" key="contact">Contact</a></li>
+    </ul>
+    </nav>
         <main class="wrapper">
             <!--subtitle---->
             <section class="row">
