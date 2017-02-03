@@ -7,7 +7,7 @@ body {
 
 a {
     text-decoration: none;
-}
+    }
 
 
 /*****************default font**********************/
@@ -397,7 +397,6 @@ a {
 }
 
 .tasks {
-    list-style: disc;
     font-size: 0.8em;
 }
 
