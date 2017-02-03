@@ -61,7 +61,7 @@ h2 {
 }
 
 
-/************socicon defaults*******************/
+/*********Merci au Socicon***socicon defaults*******************/
 
 @font-face {
     font-family: "socicon";
@@ -82,12 +82,12 @@ h2 {
 .twitter {
     width: 64px;
     height: 64px;
-    background-image: url("/home/utilisateur/Works/portofolio/img/twitter.png");
+    background-image: url("css/img/twitter.png");
 }
 
 .twitter:hover {
     transition: all .9s ease;
-    background-image: url("/home/utilisateur/Works/portofolio/img/hover/twitter.png");
+    background-image: url("css/img/hover/twitter.png");
 }
 
 .linkedin {
