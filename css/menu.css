@@ -1,3 +1,29 @@
+/***************logo*************************/
+
+.logo-frame-first, .logo-frame, .logo-middle {
+    margin-top: 0.2em;
+    text-align: center;
+}
+
+.logo-middle, .logo {
+    width: 120px;
+    max-height: 100%;
+}
+
+@media(min-width:426px) {
+    #toggle, .logo-frame{
+        display: none;
+    }
+
+}
+
+@media(max-width:426px) {
+    #overlay-laptop, .fr-first {
+        display: none;
+    }
+}
+
+
 /***********hamburger nav******************/
 
 .button_container {

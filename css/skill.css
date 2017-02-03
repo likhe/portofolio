@@ -10,19 +10,6 @@ a {
 }
 
 
-/***************logo*************************/
-
-.logo-frame, .logo {
-    margin-top: 0.2em;
-    text-align: center;
-}
-
-.logo {
-    width: 120px;
-    max-height: 100%;
-}
-
-
 
 /*******the caption***************/
 
@@ -36,6 +23,7 @@ a {
     width: 48px;
     height: 24px;
     background-color: gold;
+
 }
 
 .color-second {
@@ -49,7 +37,9 @@ a {
     height: 24px;
     background-color: red;
 }
-
+.pg, .wd, .dv {
+  text-align: center;
+}
 
 /******************the pies***************/
 

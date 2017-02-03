@@ -10,7 +10,7 @@
  .lang {
    text-align: center;
  }
-h1, h2, p, a {
+h1, h2, h3 ,h4 ,p, a {
     font-family: 'Azedo-Light';
     text-align: center;
     line-height: 1em;
@@ -82,7 +82,7 @@ h2 {
 .twitter {
     width: 64px;
     height: 64px;
-    background-image: url("/home/utilisateur/Works/portofolio/Socicon/twitter.png");
+    background-image: url("/home/utilisateur/Works/portofolio/img/twitter.png");
 }
 
 .twitter:hover {
@@ -93,7 +93,7 @@ h2 {
 .linkedin {
     width: 64px;
     height: 64px;
-    background-image: url("/home/utilisateur/Works/portofolio/Socicon/linkedin.png");
+    background-image: url("/home/utilisateur/Works/portofolio/img/linkedin.png");
 }
 
 .linkedin:hover {
@@ -104,7 +104,7 @@ h2 {
 .viadeo {
     width: 64px;
     height: 64px;
-    background-image: url("/home/utilisateur/Works/portofolio/Socicon/viadeo.png");
+    background-image: url("/home/utilisateur/Works/portofolio/img/viadeo.png");
 }
 
 .viadeo:hover {
@@ -114,7 +114,7 @@ h2 {
 .github {
     width: 64px;
     height: 64px;
-    background-image: url("/home/utilisateur/Works/portofolio/Socicon/github.png");
+    background-image: url("/home/utilisateur/Works/portofolio/img/github.png");
 }
 
 .github:hover {
