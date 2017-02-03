@@ -15,7 +15,7 @@ $(document).ready(function() {
             'cv': "Présentation",
             'pj': "Portfolio",
             'sk': "Compétences",
-            'pg': "Languages de programmation",
+            'pg': "Langages informatiques",
             'wd': "Webdesign",
             'dv': "Divers",
             "inf": 'Infographie',
