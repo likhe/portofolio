@@ -266,7 +266,7 @@ h1, h2, p, a {
 .twitter {
     width: 64px;
     height: 64px;
-    background-image: url("/home/utilisateur/Works/portofolio/Socicon/twitter.png");
+    background-image: url("./img/twitter.png");
 }
 
 .twitter:hover {
