@@ -266,12 +266,12 @@ h1, h2, p, a {
 .twitter {
     width: 64px;
     height: 64px;
-    background-image: url("./img/twitter.png");
+    background-image: url("portofolio/img/twitter.png");
 }
 
 .twitter:hover {
     transition: all .9s ease;
-    background-image: url("/home/utilisateur/Works/portofolio/hover/twitter.png");
+    background-image: url("./img/hover/twitter.png");
 }
 
 .linkedin {
