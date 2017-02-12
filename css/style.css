@@ -4,9 +4,11 @@ body {
     text-rendering: geometricPrecision;
     color: #fff;
 }
+
 * {
-  padding-bottom: 70px;
+    padding-bottom: 70px;
 }
+
 a {
     text-decoration: none;
 }
@@ -23,9 +25,11 @@ a {
 .logo {
     height: 120px;
 }
+
 p, a, {
-  line-height: 2em;
+    line-height: 2em;
 }
+
 
 /*************other written elements in section content*****************************/
 
@@ -61,6 +65,12 @@ p, a, {
 
 .social {
     text-align: center;
+}
+
+.social-img-link:hover {
+    -webkit-filter: brightness(-3);
+    filter: brightness(-3);
+    transition: all 3s ease;
 }
 
 
