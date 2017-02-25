@@ -17,6 +17,8 @@ a {
 /***************logo*************************/
 
 .logo-frame {
+    margin-left: 5em;
+    margin-top: .5em;
     width: 100px;
     height: 100px;
     background-image: url('img/logo.png');
