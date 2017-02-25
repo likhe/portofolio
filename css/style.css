@@ -40,7 +40,7 @@ p, a {
     font-family: 'Azedo-Light';
     src: url('fonts/Azedo-Light.otf');
 }
-.title,.lang >p {
+.lang >.title> p {
   font-size: 1.2em;
 }
 .lang.second-font a {
