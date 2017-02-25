@@ -31,22 +31,26 @@ p, a {
     line-height: 2em;
 }
 
-
+#lg, .translate, a {
+  font-size: 1.2em;
+}
 /*************other written elements in section content*****************************/
 
 @font-face {
     font-family: 'Azedo-Light';
     src: url('fonts/Azedo-Light.otf');
 }
-
+.title,.lang >p {
+  font-size: 1.2em;
+}
 .lang.second-font a {
-    letter-spacing: .4em;
+    font-size: 1em;
     font-weight: lighter;
 }
 
 .second-font:hover {
-    transition: all .6s ease-in;
-    transform: scale(1.1);
+    transition: all .4s ease-in;
+    letter-spacing: .2em;
     color: lime;
 }
 
@@ -80,4 +84,29 @@ p, a {
 .credits {
     text-align: center;
     font-family: 'Azedo-Light';
+}
+/*****media query************/
+@media (max-width:425px) {
+  .logo-frame {
+    margin-left:0;
+    margin-top:0;
+  }
+  h1 {
+    text-align: center;
+  }
+
+}
+@media (max-width:375px) {
+  .logo-frame {
+    margin-left:35%;
+  }
+  .col-lg {
+    display: none;
+  }
+
+}
+@media (max-width:325px) {
+  .logo-frame {
+    margin-left: 33%;
+  }
 }

@@ -8,6 +8,7 @@ $(document).ready(function() {
     let translationArr = {
         'fr': {
             'home': "Accueil",
+            'job': "Integratrice web",
             'pj': "Portfolio",
             'introduce': "Presentation",
             'exp': "Experiences",
@@ -77,7 +78,7 @@ $(document).ready(function() {
         'en': {
             'home': "Home",
             'cv': "Resume",
-            'pj': "Works",
+            'job': "Web integrator",
             'pj': "Works",
             'introduce': "About me",
             'exp': "Skills",
@@ -145,6 +146,7 @@ $(document).ready(function() {
         'pt': {
             'home': "Inicio",
             'cv': "Curriculo",
+            'job': "Integradora web",
             'pj': "Portfolio",
             'sk': "Competências",
             'pg': "Linguagens de programação",
