@@ -1,8 +1,13 @@
-body {
-    background-color: #373537;
+html {
+    background-image: url('img/welcome.png');
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+body {
     text-rendering: geometricPrecision;
-    color: #fff;
+    color: black;
 }
 
 main {
@@ -31,18 +36,60 @@ p, a {
     line-height: 2em;
 }
 
+
+/********languages********************************/
+
 #lg, .translate, a {
-  font-size: 1.2em;
+    font-size: 1.2em;
 }
+
+.translate {
+    border-radius: 40%;
+    background-color: white;
+    margin-right: 1em;
+    padding: .5em;
+    opacity: .75;
+}
+
+
+/***square style in main*******/
+
+main {
+    background-color: white;
+    background-position: center;
+    color: black;
+    margin-left: 6em;
+    margin-right: 6em;
+    opacity: .8;
+}
+
+section {
+    z-index: 100;
+    opacity: .8;
+}
+
+.absolute {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+}
+
+.subtitle {
+    margin-top: 5em;
+}
+
+
 /*************other written elements in section content*****************************/
 
-@font-face {
-    font-family: 'Azedo-Light';
-    src: url('fonts/Azedo-Light.otf');
+.lang>.title>p {
+    font-size: 1.2em;
 }
-.lang >.title> p {
-  font-size: 1.2em;
-}
+
 .lang.second-font a {
     font-size: 1em;
     font-weight: lighter;
@@ -59,17 +106,32 @@ p, a {
     transition: all .3s linear;
 }
 
-.second-font,.lang {
-    font-size: 30px;
+.second-font, .lang {
+    font-size: 1em;
     text-align: center;
-    font-family: 'Azedo-Light';
+    font-family: 'Din OSP';
+}
+
+
+/********footer**********************/
+
+.spacetop {
+    margin-top: 3em;
+}
+
+.space {
+    margin-left: 6em;
+    margin-right: 6em;
 }
 
 
 /*********social************/
 
-.social {
-    text-align: center;
+.social-img-link {
+    text-align: right;
+    line-height: 1;
+    -webkit-filter: brightness(3);
+    filter: brightness(3);
 }
 
 .social-img-link:hover {
@@ -79,34 +141,90 @@ p, a {
 }
 
 
-/*******credits********/
-
-.credits {
-    text-align: center;
-    font-family: 'Azedo-Light';
-}
 /*****media query************/
+
+@media (max-width:769px) {
+    .translate {
+        margin-right: .3em;
+        padding: .3em;
+    }
+    #lg, .translate>a {
+        font-size: 1.04em;
+    }
+    #lg {
+        text-align: left;
+    }
+    .disappear {
+        display: none;
+    }
+}
+
 @media (max-width:425px) {
-  .logo-frame {
-    margin-left:0;
-    margin-top:0;
-  }
-  h1 {
-    text-align: center;
-  }
+    .logo-frame {
+        transform: translate(60%, 20%);
+        -webkit-transform: translate(60%, 20%);
+        -moz-transform: translate(60%, 20%);
+        -ms-transform: translate(60%, 20%);
 
+
+    }
+    main {
+        margin-left: .5em;
+        margin-right: .5em;
+    }
+    .spacetop {
+        margin-top: 1.5em;
+    }
+    .space {
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+    .credits {
+        order: 1;
+    }
+    .social {
+        order: 3;
+    }
 }
+
 @media (max-width:375px) {
-  .logo-frame {
-    margin-left:35%;
-  }
-  .col-lg {
-    display: none;
-  }
-
+    .logo-frame {
+        transform: translate(50%, 20%);
+        -webkit-transform: translate(50%, 20%);
+        -moz-transform: translate(50%, 20%);
+        -ms-transform: translate(50%, 20%);
+    }
+    .col-lg {
+        display: none;
+    }
+    nav.col.social {
+        margin: 0;
+    }
+    .social-img-link {
+        width: 4em;
+        height: 25%;
+    }
+    .spacetop {
+        margin-top: 1em;
+    }
+    .space {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
 }
+
 @media (max-width:325px) {
-  .logo-frame {
-    margin-left: 33%;
+    .logo-frame {
+        transform: translate(20%, 20%);
+        -webkit-transform: translate(20%, 20%);
+        -moz-transform: translate(20%, 20%);
+        -ms-transform: translate(20%, 20%);
+    }
+}
+@media (min-width:767px) {
+  .absolute {
+    -webkit-transform: translate(-50%, 100%);
+    -moz-transform: translate(-50%, 100%);
+    -ms-transform: translate(-50%, 100%);
   }
 }
