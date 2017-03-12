@@ -9,7 +9,7 @@ h1 {
 }
 
 .text-forward {
-    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAATklEQVQoU2O0O3X+PwMDA8MhM0NGEI0LMBKtEJsJD27YgW1R0DgEtwWrdUQrxGYLY8V5iDUdhghrKFOITfenmXFgW/jSF+H3DNEKsdkCAO99IAvXcD3VAAAAAElFTkSuQmCC")repeat;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAAS0lEQVQoU2NkQAP/5f//BwkxPmRkRJaCc9AVoPNRFKKbAlIMEwMrRBbA5hSQYkZ8imCawGqINhFFF5pPMdwIMxU5WHD6GtlkbOEIAHu/Pya/x8P+AAAAAElFTkSuQmCC")repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -17,7 +17,7 @@ h1 {
 }
 
 .text-background {
-    color: black;
+    color: #262626;
 }
 
 .absolute {
