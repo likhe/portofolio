@@ -70,7 +70,7 @@ section {
 
 .absolute {
     position: absolute;
-    top: 200px;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
@@ -221,7 +221,7 @@ section {
         -ms-transform: translate(20%, 20%);
     }
 }
-@media (min-width:767px) {
+@media (min-width:7) {
   .absolute {
     -webkit-transform: translate(-50%, 100%);
     -moz-transform: translate(-50%, 100%);
