@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <title>Linda Khelifi | Intégratrice web</title>
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/pj.css">
     <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/reset.css">
 </head>
@@ -15,11 +15,21 @@
 <body>
     <div class="wrapper">
         <header class="row">
-            <!--the logo-->
+            <div class="col">
+                <div class="logo-frame">
+                </div>
+            </div>
+            <div class="col">
+                <nav class="row menu">
+                    <span class="col"><a href="#" id="pull">Menu</a></span>
+                    <span class="col"><a href="index.html">Accueil</a></span>
+                    <span class="col"><a href="cv.html">Curriculum</a></span>
+                    <span class="col"><a href="pj.html">Portfolio</a></span>
+                    <span class="col"><a href="#">Contact</a></span>
+                </nav>
+            </div>
             <div class="col">
                 <div class="row">
-                    <div class="col"></div>
-                    <div class="col"></div>
                     <div class="col" id="lg">
                         <ul>
                             <li class="translate" id="fr">
@@ -33,81 +43,83 @@
                             </li>
                         </ul>
                     </div>
+                </div>
+            </div>
+        </header>
+        <main class="wrapper">
+            <article class="row">
+                <div class="col"></div>
+                <div class="col title lang" key="pj">
+                    <h3 class="chapter">Portfolio</h3>
+                </div>
+                <div class="col"></div>
+            </article>
+            <section class="row">
+                <div class="col">
+                    <div class="view view-first">
+                        <img src="img/pj/truman.png" />
+                        <div class="mask">
+                            <a href="https://likhe.github.io/poster/" class="info">
+                                <h4 class="lang" key="at">Poster</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="view view-first">
+                        <img src="img/pj/flactools.png" />
+                        <div class="mask">
+                            <a href="https://likhe.github.io/flactools/" class="info">
+                                <h4 class="lang">Flactools</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="view view-first">
+                        <img src="img/pj/trombi.png" />
+                        <div class="mask">
+                            <a href="https://likhe.github.io/Trombi-IJL/" class="info">
+                                <h4 class="lang">Trombinoscope</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-                    <main class="wrapper">
-                        <article class="row">
-                            <div class="col"></div>
-                            <div class="col title lang" key="pj">
-                                <h3 class="chapter">Portfolio</h3>
-                            </div>
-                            <div class="col"></div>
-                        </article>
-                        <section class="row">
-                            <div class="col">
-                                <div class="view view-first">
-                                    <img src="img/pj/truman.png" />
-                                    <div class="mask">
-                                        <a href="https://likhe.github.io/poster/" class="info">
-                                            <h4 class="lang" key="at">Poster</h4>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="view view-first">
-                                    <img src="img/pj/flactools.png" />
-                                    <div class="mask">
-                                        <a href="https://likhe.github.io/flactools/" class="info">
-                                            <h4 class="lang">Flactools</h4>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="view view-first">
-                                    <img src="img/pj/trombi.png" />
-                                    <div class="mask">
-                                        <a href="https://likhe.github.io/Trombi-IJL/" class="info">
-                                            <h4 class="lang">Trombinoscope</h4>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </main>
-
-                    <!---footer-->
-                    <footer class="spacetop wrapper">
-                        <div class="space row">
-                            <!---credits--------------------->
-                            <nav class="credits col">
-                                <span class="info"><sup>&copy&nbsp;</sup><time>2017</time>&nbsp;|&nbsp;Linda Khelifi</span>
-                            </nav>
-                            <div class="col disappear"></div>
-                            <nav class="col social">
-                                <span class="social-cell">
+        <!---footer-->
+        <footer class="spacetop wrapper">
+            <div class="space row">
+                <!---credits--------------------->
+                <nav class="credits col">
+                    <span class="info"><sup>&copy&nbsp;</sup><time>2017</time>&nbsp;|&nbsp;Linda Khelifi</span>
+                </nav>
+                <div class="col disappear"></div>
+                <nav class="col social">
+                    <span class="social-cell">
                       <a class="social-link" href="https://twitter.com/likhelifi">
                           <img class="social-img-link" src="./img/twitter.png" alt="">
                       </a>
                 </span>
-                                <span class="social-cell">
+                    <span class="social-cell">
                   <a class="social-link" href="https://fr.linkedin.com/in/khelifi-linda-a6120822">
                     <img class="social-img-link" src="./img/linkedin.png" alt="">                      </a>
                 </span>
-                                <span class="social-cell">
+                    <span class="social-cell">
                   <a class="social-link" href="http://fr.viadeo.com/fr/profile/linda.khelifi1">
                 <img class="social-img-link" src="./img/viadeo.png" alt="">                    </a>
                 </span>
-                                <span class="social-cell">
+                    <span class="social-cell">
                   <a class="social-link" href="https://github.com/likhe">
                 <img class="social-img-link" src="./img/github.png" alt="">                  </a>
                 </span>
-                            </nav>
-                        </div>
-                    </footer>
-                </div>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-                <script src="js/app.js"></script>
+                </nav>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
